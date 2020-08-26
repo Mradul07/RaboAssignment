@@ -6,7 +6,7 @@
 - Pre-requisites to run each project
 - Execution
 - Verification
-- FAQ / Contact
+- Contact
 
 ## Projects in repository 
   1. **RaboAssignment** - this project contains 2 items
@@ -52,3 +52,7 @@
   
   - For **RaboAssignmentEmployeeAPI**, run the test cases from Postman manually. A sample postman collection can be found in the repository. If you want to run the automated test cases for the API, please refer the comments in the TestRunner file for RaboAssignment project located at *\src\test\java\cucumberOptions\TestRunner.java*. Then verification remains the same as above.
   
+
+## Contact
+If you have any questions related to the project feel free to reach out to me on mradul.s15@gamil.com. I'll do my best to revert asap.
+Good luck reviewing :)
