@@ -1,0 +1,15 @@
+{
+  "id" : "87a13b22-3779-4826-8532-cb2b35bb13a8",
+  "request" : {
+    "url" : "/employee/Test%20Employee",
+    "method" : "DELETE"
+  },
+  "response" : {
+    "status" : 404,
+    "body" : "employee not found"
+  },
+  "uuid" : "87a13b22-3779-4826-8532-cb2b35bb13a8",
+  "persistent" : true,
+  "priority" : 1,
+  "insertionIndex" : 20
+}

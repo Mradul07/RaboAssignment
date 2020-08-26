@@ -1,0 +1,24 @@
+{
+  "id" : "0d66db96-8e90-3d23-ae06-c83275784db4",
+  "request" : {
+    "url" : "/employee/createWithList",
+    "method" : "POST",
+    "bodyPatterns" : [ {
+      "equalToJson" : "[\r\n    {\r\n        \"id\": 3,\r\n        \"employeeName\": \"Rahul Dravid\",\r\n        \"firstName\": \"Rahul\",\r\n        \"lastName\": \"Dravid\",\r\n        \"email\": \"rahul.d@gmail.com\",\r\n        \"password\": \"rahul123\",\r\n        \"phone\": \"999111\",\r\n        \"employeeStatus\": 1\r\n    },\r\n    {\r\n        \"id\": 4,\r\n        \"employeeName\": \"Virat Kohli\",\r\n        \"firstName\": \"Virat\",\r\n        \"lastName\": \"Kohli\",\r\n        \"email\": \"virat.kohli@gmail.com\",\r\n        \"password\": \"virat123\",\r\n        \"phone\": \"7789513\",\r\n        \"employeeStatus\": 1\r\n    },\r\n    {\r\n        \"id\": 5,\r\n        \"employeeName\": \"Rohit Sharma\",\r\n        \"firstName\": \"Rohit\",\r\n        \"lastName\": \"Sharma\",\r\n        \"email\": \"rohit.sharma@gmail.com\",\r\n        \"password\": \"rohit123\",\r\n        \"phone\": \"654642\",\r\n        \"employeeStatus\": 1\r\n    }\r\n]",
+      "ignoreArrayOrder" : true,
+      "ignoreExtraElements" : true
+    } ]
+  },
+  "response" : {
+    "status" : 200,
+    "bodyFileName" : "body-createWithList-UOROD.json",
+    "headers" : {
+      "Content-Type" : "application/json",
+      "Date" : "Sat, 22 Aug 2020 11:49:18 GMT",
+      "Keep-Alive" : "timeout=60"
+    }
+  },
+  "uuid" : "0d66db96-8e90-3d23-ae06-c83275784db4",
+  "persistent" : true,
+  "insertionIndex" : 3
+}

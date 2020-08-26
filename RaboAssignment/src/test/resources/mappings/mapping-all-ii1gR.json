@@ -1,0 +1,19 @@
+{
+  "id" : "0823acc3-2ff4-384c-ad05-f9507e950dff",
+  "request" : {
+    "url" : "/employee/all",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "bodyFileName" : "body-all-ii1gR.json",
+    "headers" : {
+      "Content-Type" : "application/json",
+      "Date" : "Sat, 22 Aug 2020 11:48:36 GMT",
+      "Keep-Alive" : "timeout=60"
+    }
+  },
+  "uuid" : "0823acc3-2ff4-384c-ad05-f9507e950dff",
+  "persistent" : true,
+  "insertionIndex" : 2
+}

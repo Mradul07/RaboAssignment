@@ -1,0 +1,24 @@
+{
+  "id" : "b7a24799-2d79-38d2-9c51-85bf2aaf2095",
+  "request" : {
+    "url" : "/employee",
+    "method" : "POST",
+    "bodyPatterns" : [ {
+      "equalToJson" : "{\r\n  \"id\": 2,\r\n  \"employeeName\": \"Suresh Raina\",\r\n  \"firstName\": \"Suresh\",\r\n  \"lastName\": \"Raina\",\r\n  \"email\": \"suresh.raina@gmail.com\",\r\n  \"password\": \"raina123\",\r\n  \"phone\": \"012345678\",\r\n  \"employeeStatus\": 1\r\n}",
+      "ignoreArrayOrder" : true,
+      "ignoreExtraElements" : true
+    } ]
+  },
+  "response" : {
+    "status" : 200,
+    "bodyFileName" : "body-(root)-21pVP.json",
+    "headers" : {
+      "Content-Type" : "application/json",
+      "Date" : "Sat, 22 Aug 2020 11:49:07 GMT",
+      "Keep-Alive" : "timeout=60"
+    }
+  },
+  "uuid" : "b7a24799-2d79-38d2-9c51-85bf2aaf2095",
+  "persistent" : true,
+  "insertionIndex" : 0
+}

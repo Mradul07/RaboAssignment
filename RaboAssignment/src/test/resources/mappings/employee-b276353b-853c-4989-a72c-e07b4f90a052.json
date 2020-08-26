@@ -1,0 +1,20 @@
+{
+  "id" : "b276353b-853c-4989-a72c-e07b4f90a052",
+  "request" : {
+    "urlPattern" : "/employee/.*",
+    "method" : "ANY"
+  },
+  "response" : {
+    "status" : 400,
+    "jsonBody" : {
+      "error" : "Invalid employeename supplied"
+    },
+    "headers" : {
+      "Content-Type" : "application/json"
+    }
+  },
+  "uuid" : "b276353b-853c-4989-a72c-e07b4f90a052",
+  "persistent" : true,
+  "priority" : 10,
+  "insertionIndex" : 0
+}
