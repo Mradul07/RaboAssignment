@@ -37,6 +37,11 @@
       - Command to run the cucumber test cases   -> **mvn test**
       - Command to run the SpringAPP -> **mvn spring-boot:run**
       - Note : The **mvn test** is only relevant to the **RaboAssignment** project as this contains the Cucumber test cases. The **RaboAssignmentEmployeeAPI** project have test cases written in a separate feature file. To run those automated test cases, first the EmployeeAPI has to he started by running the RaboAssignmentEmployeeAPI project using **mvn spring-boot:run** and then run test cases **RaboAssignment** project using **mvn test**. Make sure the feature file is changed the test runner class of **RaboAssignment**
+  - Steps to run from IDE line
+    - Download or clone the project in IDE
+    - For **RaboAssignment** run the class *TestSpringApplication.java* (path - \src\main\java\com\spring\test\TestSpring\) right click the class > Run as > SpringBoot application or Java application. This will start the server, go to http//:localhost:8080/employeeApp on browser. To run the automated test cases, run the class *TestRunner.java* (path src\test\java\cucumberOptions) right click the class > Run as > Junit test cases. (change the Run configuration to Junit4 if you get an error for Junit5). This will run all the Cucumber test cases via Junit and result can be seen in the IDE itself.
+    - For **RaboAssignmentEmployeeAPI** run the class *EmployeeApiApplication.java* (path - src\main\java\com\employee\api) right click the class > Run as > SpringBoot application or Java application. Trigger the API from POSTMAN for manual check, refer verification steps.
+          
     
 ## Verification
   - For **RaboAssignment project**, the test cases are present in the *MockEmployeeAPI.feature* file under */src/test/java/features/* path. The file contains the parent feature and scenarios to test the feature. The scenarios are based on the method calls to the API and the possible return codes. Please refer yaml file. The data in the scenarios is mocked data for which pre-defined stubs are prepared and places under the directory *"/src/test/resources/"*. 
