@@ -1,0 +1,28 @@
+{
+  "id" : "65cd86c2-da0d-3dc9-bdf3-2ca49a6c4e7f",
+  "request" : {
+    "urlPath" : "/employee/login",
+    "method" : "GET",
+    "queryParameters" : {
+      "name" : {
+        "equalTo" : "Tester123"
+      },
+      "pwd" : {
+        "equalTo" : "test123"
+      }
+    }
+  },
+  "response" : {
+    "status" : 200,
+    "bodyFileName" : "body-login-4PuSx.txt",
+    "headers" : {
+      "Content-Type" : "text/plain;charset=UTF-8",
+      "Date" : "Sat, 22 Aug 2020 11:53:02 GMT",
+      "Keep-Alive" : "timeout=60"
+    }
+  },
+  "uuid" : "65cd86c2-da0d-3dc9-bdf3-2ca49a6c4e7f",
+  "persistent" : true,
+  "priority" : 1,
+  "insertionIndex" : 6
+}

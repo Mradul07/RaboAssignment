@@ -1,0 +1,17 @@
+{
+  "id" : "2450c3f2-47a7-38fa-9b39-89c651182c1d",
+  "request" : {
+    "url" : "/favicon.ico",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "bodyFileName" : "body-favicon.ico-z5zDX.json",
+    "headers" : {
+      "Content-Type" : "application/json",
+      "Date" : "Sat, 22 Aug 2020 11:47:52 GMT",
+      "Keep-Alive" : "timeout=60"
+    }
+  },
+  "uuid" : "2450c3f2-47a7-38fa-9b39-89c651182c1d"
+}

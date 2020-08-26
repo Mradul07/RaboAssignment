@@ -1,0 +1,24 @@
+{
+  "id" : "8f3e5d56-0fa1-3908-a0b2-b46cd8551caa",
+  "request" : {
+    "url" : "/employee",
+    "method" : "POST",
+    "bodyPatterns" : [ {
+      "equalToJson" : "{\r\n  \"id\": 1,\r\n  \"employeeName\": \"Mahendra Singh Dhoni\",\r\n  \"firstName\": \"Mahendra Singh\",\r\n  \"lastName\": \"Dhoni\",\r\n  \"email\": \"ms.dhoni@gmail.com\",\r\n  \"password\": \"msdhoni123\",\r\n  \"phone\": \"012345678\",\r\n  \"employeeStatus\": 1\r\n}",
+      "ignoreArrayOrder" : true,
+      "ignoreExtraElements" : true
+    } ]
+  },
+  "response" : {
+    "status" : 200,
+    "bodyFileName" : "body-(root)-5Wwlj.json",
+    "headers" : {
+      "Content-Type" : "application/json",
+      "Date" : "Sat, 22 Aug 2020 11:48:58 GMT",
+      "Keep-Alive" : "timeout=60"
+    }
+  },
+  "uuid" : "8f3e5d56-0fa1-3908-a0b2-b46cd8551caa",
+  "persistent" : true,
+  "insertionIndex" : 1
+}

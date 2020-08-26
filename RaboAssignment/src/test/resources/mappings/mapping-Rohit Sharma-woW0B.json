@@ -1,0 +1,19 @@
+{
+  "id" : "69da933f-ac76-35cc-ae9c-cbb23ad79035",
+  "request" : {
+    "url" : "/employee/Rohit%20Sharma",
+    "method" : "DELETE"
+  },
+  "response" : {
+    "status" : 200,
+    "bodyFileName" : "body-Rohit Sharma-woW0B.json",
+    "headers" : {
+      "Content-Type" : "application/json",
+      "Date" : "Sat, 22 Aug 2020 11:49:58 GMT",
+      "Keep-Alive" : "timeout=60"
+    }
+  },
+  "uuid" : "69da933f-ac76-35cc-ae9c-cbb23ad79035",
+  "persistent" : true,
+  "insertionIndex" : 9
+}

@@ -1,0 +1,23 @@
+{
+  "id" : "ece187f3-a3a4-42cd-b191-78edeefe2dd1",
+  "request" : {
+    "urlPath" : "/employee/login",
+    "method" : "GET",
+    "queryParameters" : {
+      "name" : {
+        "matches" : "[A-Za-z0-9]*"
+      },
+      "pwd" : {
+        "matches" : "[A-Za-z0-9]*"
+      }
+    }
+  },
+  "response" : {
+    "status" : 400,
+    "body" : "Invalid employeename/password supplied\n"
+  },
+  "uuid" : "ece187f3-a3a4-42cd-b191-78edeefe2dd1",
+  "persistent" : true,
+  "priority" : 2,
+  "insertionIndex" : 11
+}

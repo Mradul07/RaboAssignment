@@ -1,0 +1,24 @@
+{
+  "id" : "9527b223-08f4-3516-8759-53b0984de403",
+  "request" : {
+    "url" : "/employee/Rahul%20Dravid",
+    "method" : "PUT",
+    "bodyPatterns" : [ {
+      "equalToJson" : "{\r\n    \"id\": 3,\r\n    \"employeeName\": \"Rahul Dravid\",\r\n    \"firstName\": \"Rahul\",\r\n    \"lastName\": \"Dravid\",\r\n    \"email\": \"rahul.dravid@gmail.com\",\r\n    \"password\": \"rahul123\",\r\n    \"phone\": \"999111\",\r\n    \"employeeStatus\": 1\r\n}",
+      "ignoreArrayOrder" : true,
+      "ignoreExtraElements" : true
+    } ]
+  },
+  "response" : {
+    "status" : 200,
+    "bodyFileName" : "body-Rahul Dravid-gs8L8.json",
+    "headers" : {
+      "Content-Type" : "application/json",
+      "Date" : "Sat, 22 Aug 2020 11:49:27 GMT",
+      "Keep-Alive" : "timeout=60"
+    }
+  },
+  "uuid" : "9527b223-08f4-3516-8759-53b0984de403",
+  "persistent" : true,
+  "insertionIndex" : 8
+}

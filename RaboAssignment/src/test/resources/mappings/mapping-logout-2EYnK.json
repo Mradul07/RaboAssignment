@@ -1,0 +1,19 @@
+{
+  "id" : "4af7caa8-f6af-3d41-95ba-d16636e916d4",
+  "request" : {
+    "url" : "/employee/logout",
+    "method" : "GET"
+  },
+  "response" : {
+    "status" : 200,
+    "bodyFileName" : "body-logout-2EYnK.txt",
+    "headers" : {
+      "Content-Type" : "text/plain;charset=UTF-8",
+      "Date" : "Sat, 22 Aug 2020 11:53:20 GMT",
+      "Keep-Alive" : "timeout=60"
+    }
+  },
+  "uuid" : "4af7caa8-f6af-3d41-95ba-d16636e916d4",
+  "persistent" : true,
+  "insertionIndex" : 6
+}

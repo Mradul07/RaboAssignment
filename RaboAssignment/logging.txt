@@ -1,0 +1,3945 @@
+Request method:	GET
+Request URI:	http://localhost:8080/employee/login?name=Tester123&pwd=test123
+Proxy:			<none>
+Request params:	name=Tester123
+				pwd=test123
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Content-Type: text/plain;charset=utf-8
+Date: Sat, 22 Aug 2020 11:53:02 GMT
+Keep-Alive: timeout=60
+Matched-Stub-Id: 65cd86c2-da0d-3dc9-bdf3-2ca49a6c4e7f
+Vary: Accept-Encoding, User-Agent
+Content-Encoding: gzip
+Transfer-Encoding: chunked
+
+Successful Operation. Tester123 logged in successfully
+Request method:	GET
+Request URI:	http://localhost:8080/employee/login?name=abcdefgh&pwd=abcer123
+Proxy:			<none>
+Request params:	name=abcdefgh
+				pwd=abcer123
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 400 Bad Request
+Matched-Stub-Id: ece187f3-a3a4-42cd-b191-78edeefe2dd1
+Transfer-Encoding: chunked
+
+Invalid employeename/password supplied
+
+Request method:	GET
+Request URI:	http://localhost:8080/employee/logout
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Content-Type: text/plain;charset=utf-8
+Date: Sat, 22 Aug 2020 11:53:20 GMT
+Keep-Alive: timeout=60
+Matched-Stub-Id: 4af7caa8-f6af-3d41-95ba-d16636e916d4
+Vary: Accept-Encoding, User-Agent
+Content-Encoding: gzip
+Transfer-Encoding: chunked
+
+Logout successful
+Request method:	POST
+Request URI:	http://localhost:8080/employee
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "id": 1,
+    "employeeName": "Mahendra Singh Dhoni",
+    "firstName": "Mahendra Singh",
+    "lastName": "Dhoni",
+    "email": "ms.dhoni@gmail.com",
+    "password": "msdhoni123",
+    "phone": "012345678",
+    "employeeStatus": 1
+}
+HTTP/1.1 200 OK
+Content-Type: application/json
+Date: Sat, 22 Aug 2020 11:48:58 GMT
+Keep-Alive: timeout=60
+Matched-Stub-Id: 8f3e5d56-0fa1-3908-a0b2-b46cd8551caa
+Vary: Accept-Encoding, User-Agent
+Content-Encoding: gzip
+Transfer-Encoding: chunked
+
+{
+    "description": "Successful Operation. Employee with name: Mahendra Singh Dhoni added successfully"
+}
+Request method:	POST
+Request URI:	http://localhost:8080/employee
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "id": 2,
+    "employeeName": "Suresh Raina",
+    "firstName": "Suresh",
+    "lastName": "Raina",
+    "email": "suresh.raina@gmail.com",
+    "password": "raina123",
+    "phone": "012345678",
+    "employeeStatus": 1
+}
+HTTP/1.1 200 OK
+Content-Type: application/json
+Date: Sat, 22 Aug 2020 11:49:07 GMT
+Keep-Alive: timeout=60
+Matched-Stub-Id: b7a24799-2d79-38d2-9c51-85bf2aaf2095
+Vary: Accept-Encoding, User-Agent
+Content-Encoding: gzip
+Transfer-Encoding: chunked
+
+{
+    "description": "Successful Operation. Employee with name: Suresh Raina added successfully"
+}
+Request method:	PUT
+Request URI:	http://localhost:8080/employee/
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "id": 0,
+    "employeeName": "",
+    "firstName": "empty",
+    "lastName": "empty",
+    "email": "empty",
+    "password": "empty",
+    "phone": "empty",
+    "employeeStatus": 0
+}
+HTTP/1.1 400 Bad Request
+Content-Type: application/json
+Matched-Stub-Id: b276353b-853c-4989-a72c-e07b4f90a052
+Transfer-Encoding: chunked
+
+{
+    "error": "Invalid employeename supplied"
+}
+Request method:	PUT
+Request URI:	http://localhost:8080/employee/Test%20Employee
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "id": 0,
+    "employeeName": "Test Employee",
+    "firstName": "empty",
+    "lastName": "empty",
+    "email": "empty",
+    "password": "empty",
+    "phone": "empty",
+    "employeeStatus": 0
+}
+HTTP/1.1 404 Not Found
+Matched-Stub-Id: 5b7a62db-8296-4422-9ad3-f6e11cf53d7c
+Transfer-Encoding: chunked
+
+employee not found
+Request method:	PUT
+Request URI:	http://localhost:8080/employee/Rahul%20Dravid
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "id": 3,
+    "employeeName": "Rahul Dravid",
+    "firstName": "Rahul",
+    "lastName": "Dravid",
+    "email": "rahul.dravid@gmail.com",
+    "password": "rahul123",
+    "phone": "999111",
+    "employeeStatus": 1
+}
+HTTP/1.1 200 OK
+Content-Type: application/json
+Date: Sat, 22 Aug 2020 11:49:27 GMT
+Keep-Alive: timeout=60
+Matched-Stub-Id: 9527b223-08f4-3516-8759-53b0984de403
+Vary: Accept-Encoding, User-Agent
+Content-Encoding: gzip
+Transfer-Encoding: chunked
+
+{
+    "description": "Successful Operation. Employee : Rahul Dravid with employeeID : 3 updated successfully"
+}
+Request method:	DELETE
+Request URI:	http://localhost:8080/employee/
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 400 Bad Request
+Content-Type: application/json
+Matched-Stub-Id: b276353b-853c-4989-a72c-e07b4f90a052
+Transfer-Encoding: chunked
+
+{
+    "error": "Invalid employeename supplied"
+}
+Request method:	DELETE
+Request URI:	http://localhost:8080/employee/Test%20Employee
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 404 Not Found
+Matched-Stub-Id: 87a13b22-3779-4826-8532-cb2b35bb13a8
+Transfer-Encoding: chunked
+
+employee not found
+Request method:	DELETE
+Request URI:	http://localhost:8080/employee/Rohit%20Sharma
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Content-Type: application/json
+Date: Sat, 22 Aug 2020 11:49:58 GMT
+Keep-Alive: timeout=60
+Matched-Stub-Id: 69da933f-ac76-35cc-ae9c-cbb23ad79035
+Vary: Accept-Encoding, User-Agent
+Content-Encoding: gzip
+Transfer-Encoding: chunked
+
+{
+    "description": "Successful Operation. Employee : Rohit Sharma deleted successfully"
+}
+Request method:	GET
+Request URI:	http://localhost:8080/employee/
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 400 Bad Request
+Content-Type: application/json
+Matched-Stub-Id: b276353b-853c-4989-a72c-e07b4f90a052
+Transfer-Encoding: chunked
+
+{
+    "error": "Invalid employeename supplied"
+}
+Request method:	GET
+Request URI:	http://localhost:8080/employee/Test%20Employee
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 404 Not Found
+Matched-Stub-Id: e56aa000-3953-4af5-bf82-bd2f76244598
+Transfer-Encoding: chunked
+
+employee not found
+Request method:	GET
+Request URI:	http://localhost:8080/employee/Mahendra%20Singh%20Dhoni
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Content-Type: application/json
+Date: Sat, 22 Aug 2020 11:49:52 GMT
+Keep-Alive: timeout=60
+Matched-Stub-Id: 03126831-4279-38dc-bfa8-26d62d0982ba
+Vary: Accept-Encoding, User-Agent
+Content-Encoding: gzip
+Transfer-Encoding: chunked
+
+[
+    {
+        "id": 1,
+        "employeeName": "Mahendra Singh Dhoni",
+        "firstName": "Mahendra Singh",
+        "lastName": "Dhoni",
+        "email": "ms.dhoni@gmail.com",
+        "password": "msdhoni123",
+        "phone": "012345678",
+        "employeeStatus": 1
+    }
+]
+Request method:	GET
+Request URI:	http://localhost:8080/employee/login?name=Tester123&pwd=test123
+Proxy:			<none>
+Request params:	name=Tester123
+				pwd=test123
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Content-Type: text/plain;charset=utf-8
+Date: Sat, 22 Aug 2020 11:53:02 GMT
+Keep-Alive: timeout=60
+Matched-Stub-Id: 65cd86c2-da0d-3dc9-bdf3-2ca49a6c4e7f
+Vary: Accept-Encoding, User-Agent
+Content-Encoding: gzip
+Transfer-Encoding: chunked
+
+Successful Operation. Tester123 logged in successfully
+Request method:	GET
+Request URI:	http://localhost:8080/employee/login?name=abcdefgh&pwd=abcer123
+Proxy:			<none>
+Request params:	name=abcdefgh
+				pwd=abcer123
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 400 Bad Request
+Matched-Stub-Id: ece187f3-a3a4-42cd-b191-78edeefe2dd1
+Transfer-Encoding: chunked
+
+Invalid employeename/password supplied
+
+Request method:	GET
+Request URI:	http://localhost:8080/employee/logout
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Content-Type: text/plain;charset=utf-8
+Date: Sat, 22 Aug 2020 11:53:20 GMT
+Keep-Alive: timeout=60
+Matched-Stub-Id: 4af7caa8-f6af-3d41-95ba-d16636e916d4
+Vary: Accept-Encoding, User-Agent
+Content-Encoding: gzip
+Transfer-Encoding: chunked
+
+Logout successful
+Request method:	POST
+Request URI:	http://localhost:8080/employee
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "id": 1,
+    "employeeName": "Mahendra Singh Dhoni",
+    "firstName": "Mahendra Singh",
+    "lastName": "Dhoni",
+    "email": "ms.dhoni@gmail.com",
+    "password": "msdhoni123",
+    "phone": "012345678",
+    "employeeStatus": 1
+}
+HTTP/1.1 200 OK
+Content-Type: application/json
+Date: Sat, 22 Aug 2020 11:48:58 GMT
+Keep-Alive: timeout=60
+Matched-Stub-Id: 8f3e5d56-0fa1-3908-a0b2-b46cd8551caa
+Vary: Accept-Encoding, User-Agent
+Content-Encoding: gzip
+Transfer-Encoding: chunked
+
+{
+    "description": "Successful Operation. Employee with name: Mahendra Singh Dhoni added successfully"
+}
+Request method:	POST
+Request URI:	http://localhost:8080/employee
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "id": 2,
+    "employeeName": "Suresh Raina",
+    "firstName": "Suresh",
+    "lastName": "Raina",
+    "email": "suresh.raina@gmail.com",
+    "password": "raina123",
+    "phone": "012345678",
+    "employeeStatus": 1
+}
+HTTP/1.1 200 OK
+Content-Type: application/json
+Date: Sat, 22 Aug 2020 11:49:07 GMT
+Keep-Alive: timeout=60
+Matched-Stub-Id: b7a24799-2d79-38d2-9c51-85bf2aaf2095
+Vary: Accept-Encoding, User-Agent
+Content-Encoding: gzip
+Transfer-Encoding: chunked
+
+{
+    "description": "Successful Operation. Employee with name: Suresh Raina added successfully"
+}
+Request method:	PUT
+Request URI:	http://localhost:8080/employee/
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "id": 0,
+    "employeeName": "",
+    "firstName": "empty",
+    "lastName": "empty",
+    "email": "empty",
+    "password": "empty",
+    "phone": "empty",
+    "employeeStatus": 0
+}
+HTTP/1.1 400 Bad Request
+Content-Type: application/json
+Matched-Stub-Id: b276353b-853c-4989-a72c-e07b4f90a052
+Transfer-Encoding: chunked
+
+{
+    "error": "Invalid employeename supplied"
+}
+Request method:	PUT
+Request URI:	http://localhost:8080/employee/Test%20Employee
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "id": 0,
+    "employeeName": "Test Employee",
+    "firstName": "empty",
+    "lastName": "empty",
+    "email": "empty",
+    "password": "empty",
+    "phone": "empty",
+    "employeeStatus": 0
+}
+HTTP/1.1 404 Not Found
+Matched-Stub-Id: 5b7a62db-8296-4422-9ad3-f6e11cf53d7c
+Transfer-Encoding: chunked
+
+employee not found
+Request method:	PUT
+Request URI:	http://localhost:8080/employee/Rahul%20Dravid
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "id": 3,
+    "employeeName": "Rahul Dravid",
+    "firstName": "Rahul",
+    "lastName": "Dravid",
+    "email": "rahul.dravid@gmail.com",
+    "password": "rahul123",
+    "phone": "999111",
+    "employeeStatus": 1
+}
+HTTP/1.1 200 OK
+Content-Type: application/json
+Date: Sat, 22 Aug 2020 11:49:27 GMT
+Keep-Alive: timeout=60
+Matched-Stub-Id: 9527b223-08f4-3516-8759-53b0984de403
+Vary: Accept-Encoding, User-Agent
+Content-Encoding: gzip
+Transfer-Encoding: chunked
+
+{
+    "description": "Successful Operation. Employee : Rahul Dravid with employeeID : 3 updated successfully"
+}
+Request method:	DELETE
+Request URI:	http://localhost:8080/employee/
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 400 Bad Request
+Content-Type: application/json
+Matched-Stub-Id: b276353b-853c-4989-a72c-e07b4f90a052
+Transfer-Encoding: chunked
+
+{
+    "error": "Invalid employeename supplied"
+}
+Request method:	DELETE
+Request URI:	http://localhost:8080/employee/Test%20Employee
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 404 Not Found
+Matched-Stub-Id: 87a13b22-3779-4826-8532-cb2b35bb13a8
+Transfer-Encoding: chunked
+
+employee not found
+Request method:	DELETE
+Request URI:	http://localhost:8080/employee/Rohit%20Sharma
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Content-Type: application/json
+Date: Sat, 22 Aug 2020 11:49:58 GMT
+Keep-Alive: timeout=60
+Matched-Stub-Id: 69da933f-ac76-35cc-ae9c-cbb23ad79035
+Vary: Accept-Encoding, User-Agent
+Content-Encoding: gzip
+Transfer-Encoding: chunked
+
+{
+    "description": "Successful Operation. Employee : Rohit Sharma deleted successfully"
+}
+Request method:	GET
+Request URI:	http://localhost:8080/employee/
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 400 Bad Request
+Content-Type: application/json
+Matched-Stub-Id: b276353b-853c-4989-a72c-e07b4f90a052
+Transfer-Encoding: chunked
+
+{
+    "error": "Invalid employeename supplied"
+}
+Request method:	GET
+Request URI:	http://localhost:8080/employee/Test%20Employee
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 404 Not Found
+Matched-Stub-Id: e56aa000-3953-4af5-bf82-bd2f76244598
+Transfer-Encoding: chunked
+
+employee not found
+Request method:	GET
+Request URI:	http://localhost:8080/employee/Mahendra%20Singh%20Dhoni
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Content-Type: application/json
+Date: Sat, 22 Aug 2020 11:49:52 GMT
+Keep-Alive: timeout=60
+Matched-Stub-Id: 03126831-4279-38dc-bfa8-26d62d0982ba
+Vary: Accept-Encoding, User-Agent
+Content-Encoding: gzip
+Transfer-Encoding: chunked
+
+[
+    {
+        "id": 1,
+        "employeeName": "Mahendra Singh Dhoni",
+        "firstName": "Mahendra Singh",
+        "lastName": "Dhoni",
+        "email": "ms.dhoni@gmail.com",
+        "password": "msdhoni123",
+        "phone": "012345678",
+        "employeeStatus": 1
+    }
+]
+Request method:	GET
+Request URI:	http://localhost:8080/employee/login?name=Tester123&pwd=test123
+Proxy:			<none>
+Request params:	name=Tester123
+				pwd=test123
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Content-Type: text/plain;charset=utf-8
+Date: Sat, 22 Aug 2020 11:53:02 GMT
+Keep-Alive: timeout=60
+Matched-Stub-Id: 65cd86c2-da0d-3dc9-bdf3-2ca49a6c4e7f
+Vary: Accept-Encoding, User-Agent
+Content-Encoding: gzip
+Transfer-Encoding: chunked
+
+Successful Operation. Tester123 logged in successfully
+Request method:	GET
+Request URI:	http://localhost:8080/employee/logout
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Content-Type: text/plain;charset=utf-8
+Date: Sat, 22 Aug 2020 11:53:20 GMT
+Keep-Alive: timeout=60
+Matched-Stub-Id: 4af7caa8-f6af-3d41-95ba-d16636e916d4
+Vary: Accept-Encoding, User-Agent
+Content-Encoding: gzip
+Transfer-Encoding: chunked
+
+Logout successful
+Request method:	POST
+Request URI:	http://localhost:8080/employee
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "id": 1,
+    "employeeName": "Virat Kohli",
+    "firstName": "Virat",
+    "lastName": "Kohli",
+    "email": "v.k@b.com",
+    "password": "Virat123",
+    "phone": "012345",
+    "employeeStatus": 1
+}
+HTTP/1.1 404 Not Found
+Content-Type: text/plain
+Transfer-Encoding: chunked
+
+
+                                               Request was not matched
+                                               =======================
+
+-----------------------------------------------------------------------------------------------------------------------
+| Closest stub                                             | Request                                                  |
+-----------------------------------------------------------------------------------------------------------------------
+                                                           |
+POST                                                       | POST
+/employee                                                  | /employee
+                                                           |
+{                                                          | {                                                   <<<<< Body does not match
+  "id" : 1,                                                |   "id" : 1,
+  "employeeName" : "Mahendra Singh Dhoni",                 |   "employeeName" : "Virat Kohli",
+  "firstName" : "Mahendra Singh",                          |   "firstName" : "Virat",
+  "lastName" : "Dhoni",                                    |   "lastName" : "Kohli",
+  "email" : "ms.dhoni@gmail.com",                          |   "email" : "v.k@b.com",
+  "password" : "msdhoni123",                               |   "password" : "Virat123",
+  "phone" : "012345678",                                   |   "phone" : "012345",
+  "employeeStatus" : 1                                     |   "employeeStatus" : 1
+}                                                          | }
+                                                           |
+-----------------------------------------------------------------------------------------------------------------------
+
+Request method:	POST
+Request URI:	http://localhost:8080/employee
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "id": 2,
+    "employeeName": "Suresh Raina",
+    "firstName": "Suresh",
+    "lastName": "Raina",
+    "email": "s.r@b.com",
+    "password": "Suresh123",
+    "phone": "012345",
+    "employeeStatus": 1
+}
+HTTP/1.1 404 Not Found
+Content-Type: text/plain
+Transfer-Encoding: chunked
+
+
+                                               Request was not matched
+                                               =======================
+
+-----------------------------------------------------------------------------------------------------------------------
+| Closest stub                                             | Request                                                  |
+-----------------------------------------------------------------------------------------------------------------------
+                                                           |
+POST                                                       | POST
+/employee                                                  | /employee
+                                                           |
+{                                                          | {                                                   <<<<< Body does not match
+  "id" : 2,                                                |   "id" : 2,
+  "employeeName" : "Suresh Raina",                         |   "employeeName" : "Suresh Raina",
+  "firstName" : "Suresh",                                  |   "firstName" : "Suresh",
+  "lastName" : "Raina",                                    |   "lastName" : "Raina",
+  "email" : "suresh.raina@gmail.com",                      |   "email" : "s.r@b.com",
+  "password" : "raina123",                                 |   "password" : "Suresh123",
+  "phone" : "012345678",                                   |   "phone" : "012345",
+  "employeeStatus" : 1                                     |   "employeeStatus" : 1
+}                                                          | }
+                                                           |
+-----------------------------------------------------------------------------------------------------------------------
+
+Request method:	PUT
+Request URI:	http://localhost:8080/employee/Virat%20Virat
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "id": 1,
+    "employeeName": "Virat Virat",
+    "firstName": "Virat",
+    "lastName": "Virat",
+    "email": "k.v@b.com",
+    "password": "Virat123",
+    "phone": "012345",
+    "employeeStatus": 1
+}
+HTTP/1.1 400 Bad Request
+Content-Type: application/json
+Matched-Stub-Id: b276353b-853c-4989-a72c-e07b4f90a052
+Transfer-Encoding: chunked
+
+{
+    "error": "Invalid employeename supplied"
+}
+Request method:	DELETE
+Request URI:	http://localhost:8080/employee/Suresh%20Raina
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 400 Bad Request
+Content-Type: application/json
+Matched-Stub-Id: b276353b-853c-4989-a72c-e07b4f90a052
+Transfer-Encoding: chunked
+
+{
+    "error": "Invalid employeename supplied"
+}
+Request method:	GET
+Request URI:	http://localhost:8080/employee/Virat%20Virat
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 400 Bad Request
+Content-Type: application/json
+Matched-Stub-Id: b276353b-853c-4989-a72c-e07b4f90a052
+Transfer-Encoding: chunked
+
+{
+    "error": "Invalid employeename supplied"
+}
+Request method:	GET
+Request URI:	http://localhost:8080/employee/login?name=Tester123&pwd=test123
+Proxy:			<none>
+Request params:	name=Tester123
+				pwd=test123
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 
+Content-Type: text/plain;charset=UTF-8
+Content-Length: 54
+Date: Wed, 26 Aug 2020 09:57:47 GMT
+Keep-Alive: timeout=60
+Connection: keep-alive
+
+Successful Operation. Tester123 logged in successfully
+Request method:	GET
+Request URI:	http://localhost:8080/employee/logout
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 
+Content-Type: text/plain;charset=UTF-8
+Content-Length: 17
+Date: Wed, 26 Aug 2020 09:57:47 GMT
+Keep-Alive: timeout=60
+Connection: keep-alive
+
+Logout successful
+Request method:	POST
+Request URI:	http://localhost:8080/employee
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "id": 1,
+    "employeeName": "Virat Kohli",
+    "firstName": "Virat",
+    "lastName": "Kohli",
+    "email": "v.k@b.com",
+    "password": "Virat123",
+    "phone": "012345",
+    "employeeStatus": 1
+}
+HTTP/1.1 200 
+Content-Type: application/json
+Transfer-Encoding: chunked
+Date: Wed, 26 Aug 2020 09:57:48 GMT
+Keep-Alive: timeout=60
+Connection: keep-alive
+
+{
+    "description": "Successful Operation. Employee with name: Virat Kohli added successfully"
+}
+Request method:	POST
+Request URI:	http://localhost:8080/employee
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "id": 2,
+    "employeeName": "Suresh Raina",
+    "firstName": "Suresh",
+    "lastName": "Raina",
+    "email": "s.r@b.com",
+    "password": "Suresh123",
+    "phone": "012345",
+    "employeeStatus": 1
+}
+HTTP/1.1 200 
+Content-Type: application/json
+Transfer-Encoding: chunked
+Date: Wed, 26 Aug 2020 09:57:48 GMT
+Keep-Alive: timeout=60
+Connection: keep-alive
+
+{
+    "description": "Successful Operation. Employee with name: Suresh Raina added successfully"
+}
+Request method:	PUT
+Request URI:	http://localhost:8080/employee/Virat%20Virat
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "id": 1,
+    "employeeName": "Virat Virat",
+    "firstName": "Virat",
+    "lastName": "Virat",
+    "email": "k.v@b.com",
+    "password": "Virat123",
+    "phone": "012345",
+    "employeeStatus": 1
+}
+HTTP/1.1 200 
+Content-Type: application/json
+Transfer-Encoding: chunked
+Date: Wed, 26 Aug 2020 09:57:48 GMT
+Keep-Alive: timeout=60
+Connection: keep-alive
+
+{
+    "description": "Successful Operation. Employee : Virat Virat with employeeID : 1 updated successfully"
+}
+Request method:	DELETE
+Request URI:	http://localhost:8080/employee/Suresh%20Raina
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 
+Content-Type: application/json
+Transfer-Encoding: chunked
+Date: Wed, 26 Aug 2020 09:57:48 GMT
+Keep-Alive: timeout=60
+Connection: keep-alive
+
+{
+    "description": "Successful Operation. Employee : Suresh Raina deleted successfully"
+}
+Request method:	GET
+Request URI:	http://localhost:8080/employee/Virat%20Virat
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 
+Content-Type: application/json
+Transfer-Encoding: chunked
+Date: Wed, 26 Aug 2020 09:57:48 GMT
+Keep-Alive: timeout=60
+Connection: keep-alive
+
+[
+    {
+        "id": 1,
+        "employeeName": "Virat Virat",
+        "firstName": "Virat",
+        "lastName": "Virat",
+        "email": "k.v@b.com",
+        "password": "Virat123",
+        "phone": "012345",
+        "employeeStatus": 1
+    }
+]
+Request method:	GET
+Request URI:	http://localhost:8080/employee/login?name=Tester123&pwd=test123
+Proxy:			<none>
+Request params:	name=Tester123
+				pwd=test123
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Content-Type: text/plain;charset=utf-8
+Date: Sat, 22 Aug 2020 11:53:02 GMT
+Keep-Alive: timeout=60
+Matched-Stub-Id: 65cd86c2-da0d-3dc9-bdf3-2ca49a6c4e7f
+Vary: Accept-Encoding, User-Agent
+Content-Encoding: gzip
+Transfer-Encoding: chunked
+
+Successful Operation. Tester123 logged in successfully
+Request method:	GET
+Request URI:	http://localhost:8080/employee/login?name=abcdefgh&pwd=abcer123
+Proxy:			<none>
+Request params:	name=abcdefgh
+				pwd=abcer123
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 400 Bad Request
+Matched-Stub-Id: ece187f3-a3a4-42cd-b191-78edeefe2dd1
+Transfer-Encoding: chunked
+
+Invalid employeename/password supplied
+
+Request method:	GET
+Request URI:	http://localhost:8080/employee/logout
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Content-Type: text/plain;charset=utf-8
+Date: Sat, 22 Aug 2020 11:53:20 GMT
+Keep-Alive: timeout=60
+Matched-Stub-Id: 4af7caa8-f6af-3d41-95ba-d16636e916d4
+Vary: Accept-Encoding, User-Agent
+Content-Encoding: gzip
+Transfer-Encoding: chunked
+
+Logout successful
+Request method:	POST
+Request URI:	http://localhost:8080/employee
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "id": 1,
+    "employeeName": "Mahendra Singh Dhoni",
+    "firstName": "Mahendra Singh",
+    "lastName": "Dhoni",
+    "email": "ms.dhoni@gmail.com",
+    "password": "msdhoni123",
+    "phone": "012345678",
+    "employeeStatus": 1
+}
+HTTP/1.1 200 OK
+Content-Type: application/json
+Date: Sat, 22 Aug 2020 11:48:58 GMT
+Keep-Alive: timeout=60
+Matched-Stub-Id: 8f3e5d56-0fa1-3908-a0b2-b46cd8551caa
+Vary: Accept-Encoding, User-Agent
+Content-Encoding: gzip
+Transfer-Encoding: chunked
+
+{
+    "description": "Successful Operation. Employee with name: Mahendra Singh Dhoni added successfully"
+}
+Request method:	POST
+Request URI:	http://localhost:8080/employee
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "id": 2,
+    "employeeName": "Suresh Raina",
+    "firstName": "Suresh",
+    "lastName": "Raina",
+    "email": "suresh.raina@gmail.com",
+    "password": "raina123",
+    "phone": "012345678",
+    "employeeStatus": 1
+}
+HTTP/1.1 200 OK
+Content-Type: application/json
+Date: Sat, 22 Aug 2020 11:49:07 GMT
+Keep-Alive: timeout=60
+Matched-Stub-Id: b7a24799-2d79-38d2-9c51-85bf2aaf2095
+Vary: Accept-Encoding, User-Agent
+Content-Encoding: gzip
+Transfer-Encoding: chunked
+
+{
+    "description": "Successful Operation. Employee with name: Suresh Raina added successfully"
+}
+Request method:	PUT
+Request URI:	http://localhost:8080/employee/
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "id": 0,
+    "employeeName": "",
+    "firstName": "empty",
+    "lastName": "empty",
+    "email": "empty",
+    "password": "empty",
+    "phone": "empty",
+    "employeeStatus": 0
+}
+HTTP/1.1 400 Bad Request
+Content-Type: application/json
+Matched-Stub-Id: b276353b-853c-4989-a72c-e07b4f90a052
+Transfer-Encoding: chunked
+
+{
+    "error": "Invalid employeename supplied"
+}
+Request method:	PUT
+Request URI:	http://localhost:8080/employee/Test%20Employee
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "id": 0,
+    "employeeName": "Test Employee",
+    "firstName": "empty",
+    "lastName": "empty",
+    "email": "empty",
+    "password": "empty",
+    "phone": "empty",
+    "employeeStatus": 0
+}
+HTTP/1.1 404 Not Found
+Matched-Stub-Id: 5b7a62db-8296-4422-9ad3-f6e11cf53d7c
+Transfer-Encoding: chunked
+
+employee not found
+Request method:	PUT
+Request URI:	http://localhost:8080/employee/Rahul%20Dravid
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "id": 3,
+    "employeeName": "Rahul Dravid",
+    "firstName": "Rahul",
+    "lastName": "Dravid",
+    "email": "rahul.dravid@gmail.com",
+    "password": "rahul123",
+    "phone": "999111",
+    "employeeStatus": 1
+}
+HTTP/1.1 200 OK
+Content-Type: application/json
+Date: Sat, 22 Aug 2020 11:49:27 GMT
+Keep-Alive: timeout=60
+Matched-Stub-Id: 9527b223-08f4-3516-8759-53b0984de403
+Vary: Accept-Encoding, User-Agent
+Content-Encoding: gzip
+Transfer-Encoding: chunked
+
+{
+    "description": "Successful Operation. Employee : Rahul Dravid with employeeID : 3 updated successfully"
+}
+Request method:	DELETE
+Request URI:	http://localhost:8080/employee/
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 400 Bad Request
+Content-Type: application/json
+Matched-Stub-Id: b276353b-853c-4989-a72c-e07b4f90a052
+Transfer-Encoding: chunked
+
+{
+    "error": "Invalid employeename supplied"
+}
+Request method:	DELETE
+Request URI:	http://localhost:8080/employee/Test%20Employee
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 404 Not Found
+Matched-Stub-Id: 87a13b22-3779-4826-8532-cb2b35bb13a8
+Transfer-Encoding: chunked
+
+employee not found
+Request method:	DELETE
+Request URI:	http://localhost:8080/employee/Rohit%20Sharma
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Content-Type: application/json
+Date: Sat, 22 Aug 2020 11:49:58 GMT
+Keep-Alive: timeout=60
+Matched-Stub-Id: 69da933f-ac76-35cc-ae9c-cbb23ad79035
+Vary: Accept-Encoding, User-Agent
+Content-Encoding: gzip
+Transfer-Encoding: chunked
+
+{
+    "description": "Successful Operation. Employee : Rohit Sharma deleted successfully"
+}
+Request method:	GET
+Request URI:	http://localhost:8080/employee/
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 400 Bad Request
+Content-Type: application/json
+Matched-Stub-Id: b276353b-853c-4989-a72c-e07b4f90a052
+Transfer-Encoding: chunked
+
+{
+    "error": "Invalid employeename supplied"
+}
+Request method:	GET
+Request URI:	http://localhost:8080/employee/Test%20Employee
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 404 Not Found
+Matched-Stub-Id: e56aa000-3953-4af5-bf82-bd2f76244598
+Transfer-Encoding: chunked
+
+employee not found
+Request method:	GET
+Request URI:	http://localhost:8080/employee/Mahendra%20Singh%20Dhoni
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Content-Type: application/json
+Date: Sat, 22 Aug 2020 11:49:52 GMT
+Keep-Alive: timeout=60
+Matched-Stub-Id: 03126831-4279-38dc-bfa8-26d62d0982ba
+Vary: Accept-Encoding, User-Agent
+Content-Encoding: gzip
+Transfer-Encoding: chunked
+
+[
+    {
+        "id": 1,
+        "employeeName": "Mahendra Singh Dhoni",
+        "firstName": "Mahendra Singh",
+        "lastName": "Dhoni",
+        "email": "ms.dhoni@gmail.com",
+        "password": "msdhoni123",
+        "phone": "012345678",
+        "employeeStatus": 1
+    }
+]
+Request method:	GET
+Request URI:	http://localhost:8080/employee/login?name=Tester123&pwd=test123
+Proxy:			<none>
+Request params:	name=Tester123
+				pwd=test123
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Content-Type: text/plain;charset=utf-8
+Date: Sat, 22 Aug 2020 11:53:02 GMT
+Keep-Alive: timeout=60
+Matched-Stub-Id: 65cd86c2-da0d-3dc9-bdf3-2ca49a6c4e7f
+Vary: Accept-Encoding, User-Agent
+Content-Encoding: gzip
+Transfer-Encoding: chunked
+
+Successful Operation. Tester123 logged in successfully
+Request method:	GET
+Request URI:	http://localhost:8080/employee/login?name=abcdefgh&pwd=abcer123
+Proxy:			<none>
+Request params:	name=abcdefgh
+				pwd=abcer123
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 400 Bad Request
+Matched-Stub-Id: ece187f3-a3a4-42cd-b191-78edeefe2dd1
+Transfer-Encoding: chunked
+
+Invalid employeename/password supplied
+
+Request method:	GET
+Request URI:	http://localhost:8080/employee/logout
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Content-Type: text/plain;charset=utf-8
+Date: Sat, 22 Aug 2020 11:53:20 GMT
+Keep-Alive: timeout=60
+Matched-Stub-Id: 4af7caa8-f6af-3d41-95ba-d16636e916d4
+Vary: Accept-Encoding, User-Agent
+Content-Encoding: gzip
+Transfer-Encoding: chunked
+
+Logout successful
+Request method:	POST
+Request URI:	http://localhost:8080/employee
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "id": 1,
+    "employeeName": "Mahendra Singh Dhoni",
+    "firstName": "Mahendra Singh",
+    "lastName": "Dhoni",
+    "email": "ms.dhoni@gmail.com",
+    "password": "msdhoni123",
+    "phone": "012345678",
+    "employeeStatus": 1
+}
+HTTP/1.1 200 OK
+Content-Type: application/json
+Date: Sat, 22 Aug 2020 11:48:58 GMT
+Keep-Alive: timeout=60
+Matched-Stub-Id: 8f3e5d56-0fa1-3908-a0b2-b46cd8551caa
+Vary: Accept-Encoding, User-Agent
+Content-Encoding: gzip
+Transfer-Encoding: chunked
+
+{
+    "description": "Successful Operation. Employee with name: Mahendra Singh Dhoni added successfully"
+}
+Request method:	POST
+Request URI:	http://localhost:8080/employee
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "id": 2,
+    "employeeName": "Suresh Raina",
+    "firstName": "Suresh",
+    "lastName": "Raina",
+    "email": "suresh.raina@gmail.com",
+    "password": "raina123",
+    "phone": "012345678",
+    "employeeStatus": 1
+}
+HTTP/1.1 200 OK
+Content-Type: application/json
+Date: Sat, 22 Aug 2020 11:49:07 GMT
+Keep-Alive: timeout=60
+Matched-Stub-Id: b7a24799-2d79-38d2-9c51-85bf2aaf2095
+Vary: Accept-Encoding, User-Agent
+Content-Encoding: gzip
+Transfer-Encoding: chunked
+
+{
+    "description": "Successful Operation. Employee with name: Suresh Raina added successfully"
+}
+Request method:	PUT
+Request URI:	http://localhost:8080/employee/
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "id": 0,
+    "employeeName": "",
+    "firstName": "empty",
+    "lastName": "empty",
+    "email": "empty",
+    "password": "empty",
+    "phone": "empty",
+    "employeeStatus": 0
+}
+HTTP/1.1 400 Bad Request
+Content-Type: application/json
+Matched-Stub-Id: b276353b-853c-4989-a72c-e07b4f90a052
+Transfer-Encoding: chunked
+
+{
+    "error": "Invalid employeename supplied"
+}
+Request method:	PUT
+Request URI:	http://localhost:8080/employee/Test%20Employee
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "id": 0,
+    "employeeName": "Test Employee",
+    "firstName": "empty",
+    "lastName": "empty",
+    "email": "empty",
+    "password": "empty",
+    "phone": "empty",
+    "employeeStatus": 0
+}
+HTTP/1.1 404 Not Found
+Matched-Stub-Id: 5b7a62db-8296-4422-9ad3-f6e11cf53d7c
+Transfer-Encoding: chunked
+
+employee not found
+Request method:	PUT
+Request URI:	http://localhost:8080/employee/Rahul%20Dravid
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "id": 3,
+    "employeeName": "Rahul Dravid",
+    "firstName": "Rahul",
+    "lastName": "Dravid",
+    "email": "rahul.dravid@gmail.com",
+    "password": "rahul123",
+    "phone": "999111",
+    "employeeStatus": 1
+}
+HTTP/1.1 200 OK
+Content-Type: application/json
+Date: Sat, 22 Aug 2020 11:49:27 GMT
+Keep-Alive: timeout=60
+Matched-Stub-Id: 9527b223-08f4-3516-8759-53b0984de403
+Vary: Accept-Encoding, User-Agent
+Content-Encoding: gzip
+Transfer-Encoding: chunked
+
+{
+    "description": "Successful Operation. Employee : Rahul Dravid with employeeID : 3 updated successfully"
+}
+Request method:	DELETE
+Request URI:	http://localhost:8080/employee/
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 400 Bad Request
+Content-Type: application/json
+Matched-Stub-Id: b276353b-853c-4989-a72c-e07b4f90a052
+Transfer-Encoding: chunked
+
+{
+    "error": "Invalid employeename supplied"
+}
+Request method:	DELETE
+Request URI:	http://localhost:8080/employee/Test%20Employee
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 404 Not Found
+Matched-Stub-Id: 87a13b22-3779-4826-8532-cb2b35bb13a8
+Transfer-Encoding: chunked
+
+employee not found
+Request method:	DELETE
+Request URI:	http://localhost:8080/employee/Rohit%20Sharma
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Content-Type: application/json
+Date: Sat, 22 Aug 2020 11:49:58 GMT
+Keep-Alive: timeout=60
+Matched-Stub-Id: 69da933f-ac76-35cc-ae9c-cbb23ad79035
+Vary: Accept-Encoding, User-Agent
+Content-Encoding: gzip
+Transfer-Encoding: chunked
+
+{
+    "description": "Successful Operation. Employee : Rohit Sharma deleted successfully"
+}
+Request method:	GET
+Request URI:	http://localhost:8080/employee/
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 400 Bad Request
+Content-Type: application/json
+Matched-Stub-Id: b276353b-853c-4989-a72c-e07b4f90a052
+Transfer-Encoding: chunked
+
+{
+    "error": "Invalid employeename supplied"
+}
+Request method:	GET
+Request URI:	http://localhost:8080/employee/Test%20Employee
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 404 Not Found
+Matched-Stub-Id: e56aa000-3953-4af5-bf82-bd2f76244598
+Transfer-Encoding: chunked
+
+employee not found
+Request method:	GET
+Request URI:	http://localhost:8080/employee/Mahendra%20Singh%20Dhoni
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Content-Type: application/json
+Date: Sat, 22 Aug 2020 11:49:52 GMT
+Keep-Alive: timeout=60
+Matched-Stub-Id: 03126831-4279-38dc-bfa8-26d62d0982ba
+Vary: Accept-Encoding, User-Agent
+Content-Encoding: gzip
+Transfer-Encoding: chunked
+
+[
+    {
+        "id": 1,
+        "employeeName": "Mahendra Singh Dhoni",
+        "firstName": "Mahendra Singh",
+        "lastName": "Dhoni",
+        "email": "ms.dhoni@gmail.com",
+        "password": "msdhoni123",
+        "phone": "012345678",
+        "employeeStatus": 1
+    }
+]
+Request method:	GET
+Request URI:	http://localhost:8080/employee/login?name=Tester123&pwd=test123
+Proxy:			<none>
+Request params:	name=Tester123
+				pwd=test123
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Content-Type: text/plain;charset=utf-8
+Date: Sat, 22 Aug 2020 11:53:02 GMT
+Keep-Alive: timeout=60
+Matched-Stub-Id: 65cd86c2-da0d-3dc9-bdf3-2ca49a6c4e7f
+Vary: Accept-Encoding, User-Agent
+Content-Encoding: gzip
+Transfer-Encoding: chunked
+
+Successful Operation. Tester123 logged in successfully
+Request method:	GET
+Request URI:	http://localhost:8080/employee/login?name=abcdefgh&pwd=abcer123
+Proxy:			<none>
+Request params:	name=abcdefgh
+				pwd=abcer123
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 400 Bad Request
+Matched-Stub-Id: ece187f3-a3a4-42cd-b191-78edeefe2dd1
+Transfer-Encoding: chunked
+
+Invalid employeename/password supplied
+
+Request method:	GET
+Request URI:	http://localhost:8080/employee/logout
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Content-Type: text/plain;charset=utf-8
+Date: Sat, 22 Aug 2020 11:53:20 GMT
+Keep-Alive: timeout=60
+Matched-Stub-Id: 4af7caa8-f6af-3d41-95ba-d16636e916d4
+Vary: Accept-Encoding, User-Agent
+Content-Encoding: gzip
+Transfer-Encoding: chunked
+
+Logout successful
+Request method:	POST
+Request URI:	http://localhost:8080/employee
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "id": 1,
+    "employeeName": "Mahendra Singh Dhoni",
+    "firstName": "Mahendra Singh",
+    "lastName": "Dhoni",
+    "email": "ms.dhoni@gmail.com",
+    "password": "msdhoni123",
+    "phone": "012345678",
+    "employeeStatus": 1
+}
+HTTP/1.1 200 OK
+Content-Type: application/json
+Date: Sat, 22 Aug 2020 11:48:58 GMT
+Keep-Alive: timeout=60
+Matched-Stub-Id: 8f3e5d56-0fa1-3908-a0b2-b46cd8551caa
+Vary: Accept-Encoding, User-Agent
+Content-Encoding: gzip
+Transfer-Encoding: chunked
+
+{
+    "description": "Successful Operation. Employee with name: Mahendra Singh Dhoni added successfully"
+}
+Request method:	POST
+Request URI:	http://localhost:8080/employee
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "id": 2,
+    "employeeName": "Suresh Raina",
+    "firstName": "Suresh",
+    "lastName": "Raina",
+    "email": "suresh.raina@gmail.com",
+    "password": "raina123",
+    "phone": "012345678",
+    "employeeStatus": 1
+}
+HTTP/1.1 200 OK
+Content-Type: application/json
+Date: Sat, 22 Aug 2020 11:49:07 GMT
+Keep-Alive: timeout=60
+Matched-Stub-Id: b7a24799-2d79-38d2-9c51-85bf2aaf2095
+Vary: Accept-Encoding, User-Agent
+Content-Encoding: gzip
+Transfer-Encoding: chunked
+
+{
+    "description": "Successful Operation. Employee with name: Suresh Raina added successfully"
+}
+Request method:	PUT
+Request URI:	http://localhost:8080/employee/
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "id": 0,
+    "employeeName": "",
+    "firstName": "empty",
+    "lastName": "empty",
+    "email": "empty",
+    "password": "empty",
+    "phone": "empty",
+    "employeeStatus": 0
+}
+HTTP/1.1 400 Bad Request
+Content-Type: application/json
+Matched-Stub-Id: b276353b-853c-4989-a72c-e07b4f90a052
+Transfer-Encoding: chunked
+
+{
+    "error": "Invalid employeename supplied"
+}
+Request method:	PUT
+Request URI:	http://localhost:8080/employee/Test%20Employee
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "id": 0,
+    "employeeName": "Test Employee",
+    "firstName": "empty",
+    "lastName": "empty",
+    "email": "empty",
+    "password": "empty",
+    "phone": "empty",
+    "employeeStatus": 0
+}
+HTTP/1.1 404 Not Found
+Matched-Stub-Id: 5b7a62db-8296-4422-9ad3-f6e11cf53d7c
+Transfer-Encoding: chunked
+
+employee not found
+Request method:	PUT
+Request URI:	http://localhost:8080/employee/Rahul%20Dravid
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "id": 3,
+    "employeeName": "Rahul Dravid",
+    "firstName": "Rahul",
+    "lastName": "Dravid",
+    "email": "rahul.dravid@gmail.com",
+    "password": "rahul123",
+    "phone": "999111",
+    "employeeStatus": 1
+}
+HTTP/1.1 200 OK
+Content-Type: application/json
+Date: Sat, 22 Aug 2020 11:49:27 GMT
+Keep-Alive: timeout=60
+Matched-Stub-Id: 9527b223-08f4-3516-8759-53b0984de403
+Vary: Accept-Encoding, User-Agent
+Content-Encoding: gzip
+Transfer-Encoding: chunked
+
+{
+    "description": "Successful Operation. Employee : Rahul Dravid with employeeID : 3 updated successfully"
+}
+Request method:	DELETE
+Request URI:	http://localhost:8080/employee/
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 400 Bad Request
+Content-Type: application/json
+Matched-Stub-Id: b276353b-853c-4989-a72c-e07b4f90a052
+Transfer-Encoding: chunked
+
+{
+    "error": "Invalid employeename supplied"
+}
+Request method:	DELETE
+Request URI:	http://localhost:8080/employee/Test%20Employee
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 404 Not Found
+Matched-Stub-Id: 87a13b22-3779-4826-8532-cb2b35bb13a8
+Transfer-Encoding: chunked
+
+employee not found
+Request method:	DELETE
+Request URI:	http://localhost:8080/employee/Rohit%20Sharma
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Content-Type: application/json
+Date: Sat, 22 Aug 2020 11:49:58 GMT
+Keep-Alive: timeout=60
+Matched-Stub-Id: 69da933f-ac76-35cc-ae9c-cbb23ad79035
+Vary: Accept-Encoding, User-Agent
+Content-Encoding: gzip
+Transfer-Encoding: chunked
+
+{
+    "description": "Successful Operation. Employee : Rohit Sharma deleted successfully"
+}
+Request method:	GET
+Request URI:	http://localhost:8080/employee/
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 400 Bad Request
+Content-Type: application/json
+Matched-Stub-Id: b276353b-853c-4989-a72c-e07b4f90a052
+Transfer-Encoding: chunked
+
+{
+    "error": "Invalid employeename supplied"
+}
+Request method:	GET
+Request URI:	http://localhost:8080/employee/Test%20Employee
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 404 Not Found
+Matched-Stub-Id: e56aa000-3953-4af5-bf82-bd2f76244598
+Transfer-Encoding: chunked
+
+employee not found
+Request method:	GET
+Request URI:	http://localhost:8080/employee/Mahendra%20Singh%20Dhoni
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Content-Type: application/json
+Date: Sat, 22 Aug 2020 11:49:52 GMT
+Keep-Alive: timeout=60
+Matched-Stub-Id: 03126831-4279-38dc-bfa8-26d62d0982ba
+Vary: Accept-Encoding, User-Agent
+Content-Encoding: gzip
+Transfer-Encoding: chunked
+
+[
+    {
+        "id": 1,
+        "employeeName": "Mahendra Singh Dhoni",
+        "firstName": "Mahendra Singh",
+        "lastName": "Dhoni",
+        "email": "ms.dhoni@gmail.com",
+        "password": "msdhoni123",
+        "phone": "012345678",
+        "employeeStatus": 1
+    }
+]
+Request method:	GET
+Request URI:	http://localhost:8080/employee/login?name=Tester123&pwd=test123
+Proxy:			<none>
+Request params:	name=Tester123
+				pwd=test123
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Content-Type: text/plain;charset=utf-8
+Date: Sat, 22 Aug 2020 11:53:02 GMT
+Keep-Alive: timeout=60
+Matched-Stub-Id: 65cd86c2-da0d-3dc9-bdf3-2ca49a6c4e7f
+Vary: Accept-Encoding, User-Agent
+Content-Encoding: gzip
+Transfer-Encoding: chunked
+
+Successful Operation. Tester123 logged in successfully
+Request method:	GET
+Request URI:	http://localhost:8080/employee/login?name=abcdefgh&pwd=abcer123
+Proxy:			<none>
+Request params:	name=abcdefgh
+				pwd=abcer123
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 400 Bad Request
+Matched-Stub-Id: ece187f3-a3a4-42cd-b191-78edeefe2dd1
+Transfer-Encoding: chunked
+
+Invalid employeename/password supplied
+
+Request method:	GET
+Request URI:	http://localhost:8080/employee/logout
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Content-Type: text/plain;charset=utf-8
+Date: Sat, 22 Aug 2020 11:53:20 GMT
+Keep-Alive: timeout=60
+Matched-Stub-Id: 4af7caa8-f6af-3d41-95ba-d16636e916d4
+Vary: Accept-Encoding, User-Agent
+Content-Encoding: gzip
+Transfer-Encoding: chunked
+
+Logout successful
+Request method:	POST
+Request URI:	http://localhost:8080/employee
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "id": 1,
+    "employeeName": "Mahendra Singh Dhoni",
+    "firstName": "Mahendra Singh",
+    "lastName": "Dhoni",
+    "email": "ms.dhoni@gmail.com",
+    "password": "msdhoni123",
+    "phone": "012345678",
+    "employeeStatus": 1
+}
+HTTP/1.1 200 OK
+Content-Type: application/json
+Date: Sat, 22 Aug 2020 11:48:58 GMT
+Keep-Alive: timeout=60
+Matched-Stub-Id: 8f3e5d56-0fa1-3908-a0b2-b46cd8551caa
+Vary: Accept-Encoding, User-Agent
+Content-Encoding: gzip
+Transfer-Encoding: chunked
+
+{
+    "description": "Successful Operation. Employee with name: Mahendra Singh Dhoni added successfully"
+}
+Request method:	POST
+Request URI:	http://localhost:8080/employee
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "id": 2,
+    "employeeName": "Suresh Raina",
+    "firstName": "Suresh",
+    "lastName": "Raina",
+    "email": "suresh.raina@gmail.com",
+    "password": "raina123",
+    "phone": "012345678",
+    "employeeStatus": 1
+}
+HTTP/1.1 200 OK
+Content-Type: application/json
+Date: Sat, 22 Aug 2020 11:49:07 GMT
+Keep-Alive: timeout=60
+Matched-Stub-Id: b7a24799-2d79-38d2-9c51-85bf2aaf2095
+Vary: Accept-Encoding, User-Agent
+Content-Encoding: gzip
+Transfer-Encoding: chunked
+
+{
+    "description": "Successful Operation. Employee with name: Suresh Raina added successfully"
+}
+Request method:	PUT
+Request URI:	http://localhost:8080/employee/
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "id": 0,
+    "employeeName": "",
+    "firstName": "empty",
+    "lastName": "empty",
+    "email": "empty",
+    "password": "empty",
+    "phone": "empty",
+    "employeeStatus": 0
+}
+HTTP/1.1 400 Bad Request
+Content-Type: application/json
+Matched-Stub-Id: b276353b-853c-4989-a72c-e07b4f90a052
+Transfer-Encoding: chunked
+
+{
+    "error": "Invalid employeename supplied"
+}
+Request method:	PUT
+Request URI:	http://localhost:8080/employee/Test%20Employee
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "id": 0,
+    "employeeName": "Test Employee",
+    "firstName": "empty",
+    "lastName": "empty",
+    "email": "empty",
+    "password": "empty",
+    "phone": "empty",
+    "employeeStatus": 0
+}
+HTTP/1.1 404 Not Found
+Matched-Stub-Id: 5b7a62db-8296-4422-9ad3-f6e11cf53d7c
+Transfer-Encoding: chunked
+
+employee not found
+Request method:	PUT
+Request URI:	http://localhost:8080/employee/Rahul%20Dravid
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "id": 3,
+    "employeeName": "Rahul Dravid",
+    "firstName": "Rahul",
+    "lastName": "Dravid",
+    "email": "rahul.dravid@gmail.com",
+    "password": "rahul123",
+    "phone": "999111",
+    "employeeStatus": 1
+}
+HTTP/1.1 200 OK
+Content-Type: application/json
+Date: Sat, 22 Aug 2020 11:49:27 GMT
+Keep-Alive: timeout=60
+Matched-Stub-Id: 9527b223-08f4-3516-8759-53b0984de403
+Vary: Accept-Encoding, User-Agent
+Content-Encoding: gzip
+Transfer-Encoding: chunked
+
+{
+    "description": "Successful Operation. Employee : Rahul Dravid with employeeID : 3 updated successfully"
+}
+Request method:	DELETE
+Request URI:	http://localhost:8080/employee/
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 400 Bad Request
+Content-Type: application/json
+Matched-Stub-Id: b276353b-853c-4989-a72c-e07b4f90a052
+Transfer-Encoding: chunked
+
+{
+    "error": "Invalid employeename supplied"
+}
+Request method:	DELETE
+Request URI:	http://localhost:8080/employee/Test%20Employee
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 404 Not Found
+Matched-Stub-Id: 87a13b22-3779-4826-8532-cb2b35bb13a8
+Transfer-Encoding: chunked
+
+employee not found
+Request method:	DELETE
+Request URI:	http://localhost:8080/employee/Rohit%20Sharma
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Content-Type: application/json
+Date: Sat, 22 Aug 2020 11:49:58 GMT
+Keep-Alive: timeout=60
+Matched-Stub-Id: 69da933f-ac76-35cc-ae9c-cbb23ad79035
+Vary: Accept-Encoding, User-Agent
+Content-Encoding: gzip
+Transfer-Encoding: chunked
+
+{
+    "description": "Successful Operation. Employee : Rohit Sharma deleted successfully"
+}
+Request method:	GET
+Request URI:	http://localhost:8080/employee/
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 400 Bad Request
+Content-Type: application/json
+Matched-Stub-Id: b276353b-853c-4989-a72c-e07b4f90a052
+Transfer-Encoding: chunked
+
+{
+    "error": "Invalid employeename supplied"
+}
+Request method:	GET
+Request URI:	http://localhost:8080/employee/Test%20Employee
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 404 Not Found
+Matched-Stub-Id: e56aa000-3953-4af5-bf82-bd2f76244598
+Transfer-Encoding: chunked
+
+employee not found
+Request method:	GET
+Request URI:	http://localhost:8080/employee/Mahendra%20Singh%20Dhoni
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Content-Type: application/json
+Date: Sat, 22 Aug 2020 11:49:52 GMT
+Keep-Alive: timeout=60
+Matched-Stub-Id: 03126831-4279-38dc-bfa8-26d62d0982ba
+Vary: Accept-Encoding, User-Agent
+Content-Encoding: gzip
+Transfer-Encoding: chunked
+
+[
+    {
+        "id": 1,
+        "employeeName": "Mahendra Singh Dhoni",
+        "firstName": "Mahendra Singh",
+        "lastName": "Dhoni",
+        "email": "ms.dhoni@gmail.com",
+        "password": "msdhoni123",
+        "phone": "012345678",
+        "employeeStatus": 1
+    }
+]
+Request method:	GET
+Request URI:	http://localhost:8080/employee/login?name=Tester123&pwd=test123
+Proxy:			<none>
+Request params:	name=Tester123
+				pwd=test123
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Content-Type: text/plain;charset=utf-8
+Date: Sat, 22 Aug 2020 11:53:02 GMT
+Keep-Alive: timeout=60
+Matched-Stub-Id: 65cd86c2-da0d-3dc9-bdf3-2ca49a6c4e7f
+Vary: Accept-Encoding, User-Agent
+Content-Encoding: gzip
+Transfer-Encoding: chunked
+
+Successful Operation. Tester123 logged in successfully
+Request method:	GET
+Request URI:	http://localhost:8080/employee/login?name=abcdefgh&pwd=abcer123
+Proxy:			<none>
+Request params:	name=abcdefgh
+				pwd=abcer123
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 400 Bad Request
+Matched-Stub-Id: ece187f3-a3a4-42cd-b191-78edeefe2dd1
+Transfer-Encoding: chunked
+
+Invalid employeename/password supplied
+
+Request method:	GET
+Request URI:	http://localhost:8080/employee/logout
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Content-Type: text/plain;charset=utf-8
+Date: Sat, 22 Aug 2020 11:53:20 GMT
+Keep-Alive: timeout=60
+Matched-Stub-Id: 4af7caa8-f6af-3d41-95ba-d16636e916d4
+Vary: Accept-Encoding, User-Agent
+Content-Encoding: gzip
+Transfer-Encoding: chunked
+
+Logout successful
+Request method:	POST
+Request URI:	http://localhost:8080/employee
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "id": 1,
+    "employeeName": "Mahendra Singh Dhoni",
+    "firstName": "Mahendra Singh",
+    "lastName": "Dhoni",
+    "email": "ms.dhoni@gmail.com",
+    "password": "msdhoni123",
+    "phone": "012345678",
+    "employeeStatus": 1
+}
+HTTP/1.1 200 OK
+Content-Type: application/json
+Date: Sat, 22 Aug 2020 11:48:58 GMT
+Keep-Alive: timeout=60
+Matched-Stub-Id: 8f3e5d56-0fa1-3908-a0b2-b46cd8551caa
+Vary: Accept-Encoding, User-Agent
+Content-Encoding: gzip
+Transfer-Encoding: chunked
+
+{
+    "description": "Successful Operation. Employee with name: Mahendra Singh Dhoni added successfully"
+}
+Request method:	POST
+Request URI:	http://localhost:8080/employee
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "id": 2,
+    "employeeName": "Suresh Raina",
+    "firstName": "Suresh",
+    "lastName": "Raina",
+    "email": "suresh.raina@gmail.com",
+    "password": "raina123",
+    "phone": "012345678",
+    "employeeStatus": 1
+}
+HTTP/1.1 200 OK
+Content-Type: application/json
+Date: Sat, 22 Aug 2020 11:49:07 GMT
+Keep-Alive: timeout=60
+Matched-Stub-Id: b7a24799-2d79-38d2-9c51-85bf2aaf2095
+Vary: Accept-Encoding, User-Agent
+Content-Encoding: gzip
+Transfer-Encoding: chunked
+
+{
+    "description": "Successful Operation. Employee with name: Suresh Raina added successfully"
+}
+Request method:	PUT
+Request URI:	http://localhost:8080/employee/
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "id": 0,
+    "employeeName": "",
+    "firstName": "empty",
+    "lastName": "empty",
+    "email": "empty",
+    "password": "empty",
+    "phone": "empty",
+    "employeeStatus": 0
+}
+HTTP/1.1 400 Bad Request
+Content-Type: application/json
+Matched-Stub-Id: b276353b-853c-4989-a72c-e07b4f90a052
+Transfer-Encoding: chunked
+
+{
+    "error": "Invalid employeename supplied"
+}
+Request method:	PUT
+Request URI:	http://localhost:8080/employee/Test%20Employee
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "id": 0,
+    "employeeName": "Test Employee",
+    "firstName": "empty",
+    "lastName": "empty",
+    "email": "empty",
+    "password": "empty",
+    "phone": "empty",
+    "employeeStatus": 0
+}
+HTTP/1.1 404 Not Found
+Matched-Stub-Id: 5b7a62db-8296-4422-9ad3-f6e11cf53d7c
+Transfer-Encoding: chunked
+
+employee not found
+Request method:	PUT
+Request URI:	http://localhost:8080/employee/Rahul%20Dravid
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "id": 3,
+    "employeeName": "Rahul Dravid",
+    "firstName": "Rahul",
+    "lastName": "Dravid",
+    "email": "rahul.dravid@gmail.com",
+    "password": "rahul123",
+    "phone": "999111",
+    "employeeStatus": 1
+}
+HTTP/1.1 200 OK
+Content-Type: application/json
+Date: Sat, 22 Aug 2020 11:49:27 GMT
+Keep-Alive: timeout=60
+Matched-Stub-Id: 9527b223-08f4-3516-8759-53b0984de403
+Vary: Accept-Encoding, User-Agent
+Content-Encoding: gzip
+Transfer-Encoding: chunked
+
+{
+    "description": "Successful Operation. Employee : Rahul Dravid with employeeID : 3 updated successfully"
+}
+Request method:	DELETE
+Request URI:	http://localhost:8080/employee/
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 400 Bad Request
+Content-Type: application/json
+Matched-Stub-Id: b276353b-853c-4989-a72c-e07b4f90a052
+Transfer-Encoding: chunked
+
+{
+    "error": "Invalid employeename supplied"
+}
+Request method:	DELETE
+Request URI:	http://localhost:8080/employee/Test%20Employee
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 404 Not Found
+Matched-Stub-Id: 87a13b22-3779-4826-8532-cb2b35bb13a8
+Transfer-Encoding: chunked
+
+employee not found
+Request method:	DELETE
+Request URI:	http://localhost:8080/employee/Rohit%20Sharma
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Content-Type: application/json
+Date: Sat, 22 Aug 2020 11:49:58 GMT
+Keep-Alive: timeout=60
+Matched-Stub-Id: 69da933f-ac76-35cc-ae9c-cbb23ad79035
+Vary: Accept-Encoding, User-Agent
+Content-Encoding: gzip
+Transfer-Encoding: chunked
+
+{
+    "description": "Successful Operation. Employee : Rohit Sharma deleted successfully"
+}
+Request method:	GET
+Request URI:	http://localhost:8080/employee/
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 400 Bad Request
+Content-Type: application/json
+Matched-Stub-Id: b276353b-853c-4989-a72c-e07b4f90a052
+Transfer-Encoding: chunked
+
+{
+    "error": "Invalid employeename supplied"
+}
+Request method:	GET
+Request URI:	http://localhost:8080/employee/Test%20Employee
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 404 Not Found
+Matched-Stub-Id: e56aa000-3953-4af5-bf82-bd2f76244598
+Transfer-Encoding: chunked
+
+employee not found
+Request method:	GET
+Request URI:	http://localhost:8080/employee/Mahendra%20Singh%20Dhoni
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Content-Type: application/json
+Date: Sat, 22 Aug 2020 11:49:52 GMT
+Keep-Alive: timeout=60
+Matched-Stub-Id: 03126831-4279-38dc-bfa8-26d62d0982ba
+Vary: Accept-Encoding, User-Agent
+Content-Encoding: gzip
+Transfer-Encoding: chunked
+
+[
+    {
+        "id": 1,
+        "employeeName": "Mahendra Singh Dhoni",
+        "firstName": "Mahendra Singh",
+        "lastName": "Dhoni",
+        "email": "ms.dhoni@gmail.com",
+        "password": "msdhoni123",
+        "phone": "012345678",
+        "employeeStatus": 1
+    }
+]
+Request method:	GET
+Request URI:	http://localhost:8080/employee/login?name=Tester123&pwd=test123
+Proxy:			<none>
+Request params:	name=Tester123
+				pwd=test123
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Content-Type: text/plain;charset=utf-8
+Date: Sat, 22 Aug 2020 11:53:02 GMT
+Keep-Alive: timeout=60
+Matched-Stub-Id: 65cd86c2-da0d-3dc9-bdf3-2ca49a6c4e7f
+Vary: Accept-Encoding, User-Agent
+Content-Encoding: gzip
+Transfer-Encoding: chunked
+
+Successful Operation. Tester123 logged in successfully
+Request method:	GET
+Request URI:	http://localhost:8080/employee/login?name=abcdefgh&pwd=abcer123
+Proxy:			<none>
+Request params:	name=abcdefgh
+				pwd=abcer123
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 400 Bad Request
+Matched-Stub-Id: ece187f3-a3a4-42cd-b191-78edeefe2dd1
+Transfer-Encoding: chunked
+
+Invalid employeename/password supplied
+
+Request method:	GET
+Request URI:	http://localhost:8080/employee/logout
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Content-Type: text/plain;charset=utf-8
+Date: Sat, 22 Aug 2020 11:53:20 GMT
+Keep-Alive: timeout=60
+Matched-Stub-Id: 4af7caa8-f6af-3d41-95ba-d16636e916d4
+Vary: Accept-Encoding, User-Agent
+Content-Encoding: gzip
+Transfer-Encoding: chunked
+
+Logout successful
+Request method:	POST
+Request URI:	http://localhost:8080/employee
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "id": 1,
+    "employeeName": "Mahendra Singh Dhoni",
+    "firstName": "Mahendra Singh",
+    "lastName": "Dhoni",
+    "email": "ms.dhoni@gmail.com",
+    "password": "msdhoni123",
+    "phone": "012345678",
+    "employeeStatus": 1
+}
+HTTP/1.1 200 OK
+Content-Type: application/json
+Date: Sat, 22 Aug 2020 11:48:58 GMT
+Keep-Alive: timeout=60
+Matched-Stub-Id: 8f3e5d56-0fa1-3908-a0b2-b46cd8551caa
+Vary: Accept-Encoding, User-Agent
+Content-Encoding: gzip
+Transfer-Encoding: chunked
+
+{
+    "description": "Successful Operation. Employee with name: Mahendra Singh Dhoni added successfully"
+}
+Request method:	POST
+Request URI:	http://localhost:8080/employee
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "id": 2,
+    "employeeName": "Suresh Raina",
+    "firstName": "Suresh",
+    "lastName": "Raina",
+    "email": "suresh.raina@gmail.com",
+    "password": "raina123",
+    "phone": "012345678",
+    "employeeStatus": 1
+}
+HTTP/1.1 200 OK
+Content-Type: application/json
+Date: Sat, 22 Aug 2020 11:49:07 GMT
+Keep-Alive: timeout=60
+Matched-Stub-Id: b7a24799-2d79-38d2-9c51-85bf2aaf2095
+Vary: Accept-Encoding, User-Agent
+Content-Encoding: gzip
+Transfer-Encoding: chunked
+
+{
+    "description": "Successful Operation. Employee with name: Suresh Raina added successfully"
+}
+Request method:	PUT
+Request URI:	http://localhost:8080/employee/
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "id": 0,
+    "employeeName": "",
+    "firstName": "empty",
+    "lastName": "empty",
+    "email": "empty",
+    "password": "empty",
+    "phone": "empty",
+    "employeeStatus": 0
+}
+HTTP/1.1 400 Bad Request
+Content-Type: application/json
+Matched-Stub-Id: b276353b-853c-4989-a72c-e07b4f90a052
+Transfer-Encoding: chunked
+
+{
+    "error": "Invalid employeename supplied"
+}
+Request method:	PUT
+Request URI:	http://localhost:8080/employee/Test%20Employee
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "id": 0,
+    "employeeName": "Test Employee",
+    "firstName": "empty",
+    "lastName": "empty",
+    "email": "empty",
+    "password": "empty",
+    "phone": "empty",
+    "employeeStatus": 0
+}
+HTTP/1.1 404 Not Found
+Matched-Stub-Id: 5b7a62db-8296-4422-9ad3-f6e11cf53d7c
+Transfer-Encoding: chunked
+
+employee not found
+Request method:	PUT
+Request URI:	http://localhost:8080/employee/Rahul%20Dravid
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "id": 3,
+    "employeeName": "Rahul Dravid",
+    "firstName": "Rahul",
+    "lastName": "Dravid",
+    "email": "rahul.dravid@gmail.com",
+    "password": "rahul123",
+    "phone": "999111",
+    "employeeStatus": 1
+}
+HTTP/1.1 200 OK
+Content-Type: application/json
+Date: Sat, 22 Aug 2020 11:49:27 GMT
+Keep-Alive: timeout=60
+Matched-Stub-Id: 9527b223-08f4-3516-8759-53b0984de403
+Vary: Accept-Encoding, User-Agent
+Content-Encoding: gzip
+Transfer-Encoding: chunked
+
+{
+    "description": "Successful Operation. Employee : Rahul Dravid with employeeID : 3 updated successfully"
+}
+Request method:	DELETE
+Request URI:	http://localhost:8080/employee/
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 400 Bad Request
+Content-Type: application/json
+Matched-Stub-Id: b276353b-853c-4989-a72c-e07b4f90a052
+Transfer-Encoding: chunked
+
+{
+    "error": "Invalid employeename supplied"
+}
+Request method:	DELETE
+Request URI:	http://localhost:8080/employee/Test%20Employee
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 404 Not Found
+Matched-Stub-Id: 87a13b22-3779-4826-8532-cb2b35bb13a8
+Transfer-Encoding: chunked
+
+employee not found
+Request method:	DELETE
+Request URI:	http://localhost:8080/employee/Rohit%20Sharma
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Content-Type: application/json
+Date: Sat, 22 Aug 2020 11:49:58 GMT
+Keep-Alive: timeout=60
+Matched-Stub-Id: 69da933f-ac76-35cc-ae9c-cbb23ad79035
+Vary: Accept-Encoding, User-Agent
+Content-Encoding: gzip
+Transfer-Encoding: chunked
+
+{
+    "description": "Successful Operation. Employee : Rohit Sharma deleted successfully"
+}
+Request method:	GET
+Request URI:	http://localhost:8080/employee/
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 400 Bad Request
+Content-Type: application/json
+Matched-Stub-Id: b276353b-853c-4989-a72c-e07b4f90a052
+Transfer-Encoding: chunked
+
+{
+    "error": "Invalid employeename supplied"
+}
+Request method:	GET
+Request URI:	http://localhost:8080/employee/Test%20Employee
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 404 Not Found
+Matched-Stub-Id: e56aa000-3953-4af5-bf82-bd2f76244598
+Transfer-Encoding: chunked
+
+employee not found
+Request method:	GET
+Request URI:	http://localhost:8080/employee/Mahendra%20Singh%20Dhoni
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Content-Type: application/json
+Date: Sat, 22 Aug 2020 11:49:52 GMT
+Keep-Alive: timeout=60
+Matched-Stub-Id: 03126831-4279-38dc-bfa8-26d62d0982ba
+Vary: Accept-Encoding, User-Agent
+Content-Encoding: gzip
+Transfer-Encoding: chunked
+
+[
+    {
+        "id": 1,
+        "employeeName": "Mahendra Singh Dhoni",
+        "firstName": "Mahendra Singh",
+        "lastName": "Dhoni",
+        "email": "ms.dhoni@gmail.com",
+        "password": "msdhoni123",
+        "phone": "012345678",
+        "employeeStatus": 1
+    }
+]
+Request method:	GET
+Request URI:	http://localhost:8080/employee/login?name=Tester123&pwd=test123
+Proxy:			<none>
+Request params:	name=Tester123
+				pwd=test123
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Content-Type: text/plain;charset=utf-8
+Date: Sat, 22 Aug 2020 11:53:02 GMT
+Keep-Alive: timeout=60
+Matched-Stub-Id: 65cd86c2-da0d-3dc9-bdf3-2ca49a6c4e7f
+Vary: Accept-Encoding, User-Agent
+Content-Encoding: gzip
+Transfer-Encoding: chunked
+
+Successful Operation. Tester123 logged in successfully
+Request method:	GET
+Request URI:	http://localhost:8080/employee/login?name=abcdefgh&pwd=abcer123
+Proxy:			<none>
+Request params:	name=abcdefgh
+				pwd=abcer123
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 400 Bad Request
+Matched-Stub-Id: ece187f3-a3a4-42cd-b191-78edeefe2dd1
+Transfer-Encoding: chunked
+
+Invalid employeename/password supplied
+
+Request method:	GET
+Request URI:	http://localhost:8080/employee/logout
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Content-Type: text/plain;charset=utf-8
+Date: Sat, 22 Aug 2020 11:53:20 GMT
+Keep-Alive: timeout=60
+Matched-Stub-Id: 4af7caa8-f6af-3d41-95ba-d16636e916d4
+Vary: Accept-Encoding, User-Agent
+Content-Encoding: gzip
+Transfer-Encoding: chunked
+
+Logout successful
+Request method:	POST
+Request URI:	http://localhost:8080/employee
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "id": 1,
+    "employeeName": "Mahendra Singh Dhoni",
+    "firstName": "Mahendra Singh",
+    "lastName": "Dhoni",
+    "email": "ms.dhoni@gmail.com",
+    "password": "msdhoni123",
+    "phone": "012345678",
+    "employeeStatus": 1
+}
+HTTP/1.1 200 OK
+Content-Type: application/json
+Date: Sat, 22 Aug 2020 11:48:58 GMT
+Keep-Alive: timeout=60
+Matched-Stub-Id: 8f3e5d56-0fa1-3908-a0b2-b46cd8551caa
+Vary: Accept-Encoding, User-Agent
+Content-Encoding: gzip
+Transfer-Encoding: chunked
+
+{
+    "description": "Successful Operation. Employee with name: Mahendra Singh Dhoni added successfully"
+}
+Request method:	POST
+Request URI:	http://localhost:8080/employee
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "id": 2,
+    "employeeName": "Suresh Raina",
+    "firstName": "Suresh",
+    "lastName": "Raina",
+    "email": "suresh.raina@gmail.com",
+    "password": "raina123",
+    "phone": "012345678",
+    "employeeStatus": 1
+}
+HTTP/1.1 200 OK
+Content-Type: application/json
+Date: Sat, 22 Aug 2020 11:49:07 GMT
+Keep-Alive: timeout=60
+Matched-Stub-Id: b7a24799-2d79-38d2-9c51-85bf2aaf2095
+Vary: Accept-Encoding, User-Agent
+Content-Encoding: gzip
+Transfer-Encoding: chunked
+
+{
+    "description": "Successful Operation. Employee with name: Suresh Raina added successfully"
+}
+Request method:	PUT
+Request URI:	http://localhost:8080/employee/
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "id": 0,
+    "employeeName": "",
+    "firstName": "empty",
+    "lastName": "empty",
+    "email": "empty",
+    "password": "empty",
+    "phone": "empty",
+    "employeeStatus": 0
+}
+HTTP/1.1 400 Bad Request
+Content-Type: application/json
+Matched-Stub-Id: b276353b-853c-4989-a72c-e07b4f90a052
+Transfer-Encoding: chunked
+
+{
+    "error": "Invalid employeename supplied"
+}
+Request method:	PUT
+Request URI:	http://localhost:8080/employee/Test%20Employee
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "id": 0,
+    "employeeName": "Test Employee",
+    "firstName": "empty",
+    "lastName": "empty",
+    "email": "empty",
+    "password": "empty",
+    "phone": "empty",
+    "employeeStatus": 0
+}
+HTTP/1.1 404 Not Found
+Matched-Stub-Id: 5b7a62db-8296-4422-9ad3-f6e11cf53d7c
+Transfer-Encoding: chunked
+
+employee not found
+Request method:	PUT
+Request URI:	http://localhost:8080/employee/Rahul%20Dravid
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "id": 3,
+    "employeeName": "Rahul Dravid",
+    "firstName": "Rahul",
+    "lastName": "Dravid",
+    "email": "rahul.dravid@gmail.com",
+    "password": "rahul123",
+    "phone": "999111",
+    "employeeStatus": 1
+}
+HTTP/1.1 200 OK
+Content-Type: application/json
+Date: Sat, 22 Aug 2020 11:49:27 GMT
+Keep-Alive: timeout=60
+Matched-Stub-Id: 9527b223-08f4-3516-8759-53b0984de403
+Vary: Accept-Encoding, User-Agent
+Content-Encoding: gzip
+Transfer-Encoding: chunked
+
+{
+    "description": "Successful Operation. Employee : Rahul Dravid with employeeID : 3 updated successfully"
+}
+Request method:	DELETE
+Request URI:	http://localhost:8080/employee/
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 400 Bad Request
+Content-Type: application/json
+Matched-Stub-Id: b276353b-853c-4989-a72c-e07b4f90a052
+Transfer-Encoding: chunked
+
+{
+    "error": "Invalid employeename supplied"
+}
+Request method:	DELETE
+Request URI:	http://localhost:8080/employee/Test%20Employee
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 404 Not Found
+Matched-Stub-Id: 87a13b22-3779-4826-8532-cb2b35bb13a8
+Transfer-Encoding: chunked
+
+employee not found
+Request method:	DELETE
+Request URI:	http://localhost:8080/employee/Rohit%20Sharma
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Content-Type: application/json
+Date: Sat, 22 Aug 2020 11:49:58 GMT
+Keep-Alive: timeout=60
+Matched-Stub-Id: 69da933f-ac76-35cc-ae9c-cbb23ad79035
+Vary: Accept-Encoding, User-Agent
+Content-Encoding: gzip
+Transfer-Encoding: chunked
+
+{
+    "description": "Successful Operation. Employee : Rohit Sharma deleted successfully"
+}
+Request method:	GET
+Request URI:	http://localhost:8080/employee/
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 400 Bad Request
+Content-Type: application/json
+Matched-Stub-Id: b276353b-853c-4989-a72c-e07b4f90a052
+Transfer-Encoding: chunked
+
+{
+    "error": "Invalid employeename supplied"
+}
+Request method:	GET
+Request URI:	http://localhost:8080/employee/Test%20Employee
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 404 Not Found
+Matched-Stub-Id: e56aa000-3953-4af5-bf82-bd2f76244598
+Transfer-Encoding: chunked
+
+employee not found
+Request method:	GET
+Request URI:	http://localhost:8080/employee/Mahendra%20Singh%20Dhoni
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Content-Type: application/json
+Date: Sat, 22 Aug 2020 11:49:52 GMT
+Keep-Alive: timeout=60
+Matched-Stub-Id: 03126831-4279-38dc-bfa8-26d62d0982ba
+Vary: Accept-Encoding, User-Agent
+Content-Encoding: gzip
+Transfer-Encoding: chunked
+
+[
+    {
+        "id": 1,
+        "employeeName": "Mahendra Singh Dhoni",
+        "firstName": "Mahendra Singh",
+        "lastName": "Dhoni",
+        "email": "ms.dhoni@gmail.com",
+        "password": "msdhoni123",
+        "phone": "012345678",
+        "employeeStatus": 1
+    }
+]
+Request method:	GET
+Request URI:	http://localhost:8080/employee/login?name=Tester123&pwd=test123
+Proxy:			<none>
+Request params:	name=Tester123
+				pwd=test123
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Content-Type: text/plain;charset=utf-8
+Date: Sat, 22 Aug 2020 11:53:02 GMT
+Keep-Alive: timeout=60
+Matched-Stub-Id: 65cd86c2-da0d-3dc9-bdf3-2ca49a6c4e7f
+Vary: Accept-Encoding, User-Agent
+Content-Encoding: gzip
+Transfer-Encoding: chunked
+
+Successful Operation. Tester123 logged in successfully
+Request method:	GET
+Request URI:	http://localhost:8080/employee/login?name=abcdefgh&pwd=abcer123
+Proxy:			<none>
+Request params:	name=abcdefgh
+				pwd=abcer123
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 400 Bad Request
+Matched-Stub-Id: ece187f3-a3a4-42cd-b191-78edeefe2dd1
+Transfer-Encoding: chunked
+
+Invalid employeename/password supplied
+
+Request method:	GET
+Request URI:	http://localhost:8080/employee/logout
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Content-Type: text/plain;charset=utf-8
+Date: Sat, 22 Aug 2020 11:53:20 GMT
+Keep-Alive: timeout=60
+Matched-Stub-Id: 4af7caa8-f6af-3d41-95ba-d16636e916d4
+Vary: Accept-Encoding, User-Agent
+Content-Encoding: gzip
+Transfer-Encoding: chunked
+
+Logout successful
+Request method:	POST
+Request URI:	http://localhost:8080/employee
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "id": 1,
+    "employeeName": "Mahendra Singh Dhoni",
+    "firstName": "Mahendra Singh",
+    "lastName": "Dhoni",
+    "email": "ms.dhoni@gmail.com",
+    "password": "msdhoni123",
+    "phone": "012345678",
+    "employeeStatus": 1
+}
+HTTP/1.1 200 OK
+Content-Type: application/json
+Date: Sat, 22 Aug 2020 11:48:58 GMT
+Keep-Alive: timeout=60
+Matched-Stub-Id: 8f3e5d56-0fa1-3908-a0b2-b46cd8551caa
+Vary: Accept-Encoding, User-Agent
+Content-Encoding: gzip
+Transfer-Encoding: chunked
+
+{
+    "description": "Successful Operation. Employee with name: Mahendra Singh Dhoni added successfully"
+}
+Request method:	POST
+Request URI:	http://localhost:8080/employee
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "id": 2,
+    "employeeName": "Suresh Raina",
+    "firstName": "Suresh",
+    "lastName": "Raina",
+    "email": "suresh.raina@gmail.com",
+    "password": "raina123",
+    "phone": "012345678",
+    "employeeStatus": 1
+}
+HTTP/1.1 200 OK
+Content-Type: application/json
+Date: Sat, 22 Aug 2020 11:49:07 GMT
+Keep-Alive: timeout=60
+Matched-Stub-Id: b7a24799-2d79-38d2-9c51-85bf2aaf2095
+Vary: Accept-Encoding, User-Agent
+Content-Encoding: gzip
+Transfer-Encoding: chunked
+
+{
+    "description": "Successful Operation. Employee with name: Suresh Raina added successfully"
+}
+Request method:	PUT
+Request URI:	http://localhost:8080/employee/
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "id": 0,
+    "employeeName": "",
+    "firstName": "empty",
+    "lastName": "empty",
+    "email": "empty",
+    "password": "empty",
+    "phone": "empty",
+    "employeeStatus": 0
+}
+HTTP/1.1 400 Bad Request
+Content-Type: application/json
+Matched-Stub-Id: b276353b-853c-4989-a72c-e07b4f90a052
+Transfer-Encoding: chunked
+
+{
+    "error": "Invalid employeename supplied"
+}
+Request method:	PUT
+Request URI:	http://localhost:8080/employee/Test%20Employee
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "id": 0,
+    "employeeName": "Test Employee",
+    "firstName": "empty",
+    "lastName": "empty",
+    "email": "empty",
+    "password": "empty",
+    "phone": "empty",
+    "employeeStatus": 0
+}
+HTTP/1.1 404 Not Found
+Matched-Stub-Id: 5b7a62db-8296-4422-9ad3-f6e11cf53d7c
+Transfer-Encoding: chunked
+
+employee not found
+Request method:	PUT
+Request URI:	http://localhost:8080/employee/Rahul%20Dravid
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "id": 3,
+    "employeeName": "Rahul Dravid",
+    "firstName": "Rahul",
+    "lastName": "Dravid",
+    "email": "rahul.dravid@gmail.com",
+    "password": "rahul123",
+    "phone": "999111",
+    "employeeStatus": 1
+}
+HTTP/1.1 200 OK
+Content-Type: application/json
+Date: Sat, 22 Aug 2020 11:49:27 GMT
+Keep-Alive: timeout=60
+Matched-Stub-Id: 9527b223-08f4-3516-8759-53b0984de403
+Vary: Accept-Encoding, User-Agent
+Content-Encoding: gzip
+Transfer-Encoding: chunked
+
+{
+    "description": "Successful Operation. Employee : Rahul Dravid with employeeID : 3 updated successfully"
+}
+Request method:	DELETE
+Request URI:	http://localhost:8080/employee/
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 400 Bad Request
+Content-Type: application/json
+Matched-Stub-Id: b276353b-853c-4989-a72c-e07b4f90a052
+Transfer-Encoding: chunked
+
+{
+    "error": "Invalid employeename supplied"
+}
+Request method:	DELETE
+Request URI:	http://localhost:8080/employee/Test%20Employee
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 404 Not Found
+Matched-Stub-Id: 87a13b22-3779-4826-8532-cb2b35bb13a8
+Transfer-Encoding: chunked
+
+employee not found
+Request method:	DELETE
+Request URI:	http://localhost:8080/employee/Rohit%20Sharma
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Content-Type: application/json
+Date: Sat, 22 Aug 2020 11:49:58 GMT
+Keep-Alive: timeout=60
+Matched-Stub-Id: 69da933f-ac76-35cc-ae9c-cbb23ad79035
+Vary: Accept-Encoding, User-Agent
+Content-Encoding: gzip
+Transfer-Encoding: chunked
+
+{
+    "description": "Successful Operation. Employee : Rohit Sharma deleted successfully"
+}
+Request method:	GET
+Request URI:	http://localhost:8080/employee/
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 400 Bad Request
+Content-Type: application/json
+Matched-Stub-Id: b276353b-853c-4989-a72c-e07b4f90a052
+Transfer-Encoding: chunked
+
+{
+    "error": "Invalid employeename supplied"
+}
+Request method:	GET
+Request URI:	http://localhost:8080/employee/Test%20Employee
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 404 Not Found
+Matched-Stub-Id: e56aa000-3953-4af5-bf82-bd2f76244598
+Transfer-Encoding: chunked
+
+employee not found
+Request method:	GET
+Request URI:	http://localhost:8080/employee/Mahendra%20Singh%20Dhoni
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Content-Type: application/json
+Date: Sat, 22 Aug 2020 11:49:52 GMT
+Keep-Alive: timeout=60
+Matched-Stub-Id: 03126831-4279-38dc-bfa8-26d62d0982ba
+Vary: Accept-Encoding, User-Agent
+Content-Encoding: gzip
+Transfer-Encoding: chunked
+
+[
+    {
+        "id": 1,
+        "employeeName": "Mahendra Singh Dhoni",
+        "firstName": "Mahendra Singh",
+        "lastName": "Dhoni",
+        "email": "ms.dhoni@gmail.com",
+        "password": "msdhoni123",
+        "phone": "012345678",
+        "employeeStatus": 1
+    }
+]
