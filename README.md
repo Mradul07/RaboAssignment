@@ -1,7 +1,7 @@
 # RaboAssignment
 
 ## Table of Contents
-- Projects in repository
+- Items in repository
 - Description of each project
 - Pre-requisites to run each project
 - Execution
@@ -13,6 +13,7 @@
      - Dummy application that displays "Hello, all API tests were successful" on localhost:8080/employeeApp
      - Test cases for EmployeesAPI those run on dynamic Wiremock server and static stubs
   2. **RaboAssignmentEmployeeAPI** - this project is the working version of Employee API based on the yaml file provided. This app supports the inbuilt Apache derby database. 
+  3. **Employee API Manual test cases.postman_collection** This is a postman collection for manual test cases to be run for **EmployeeAPI** in project **RaboAssignmentEmployeeAPI**
   
 ## Description of each project
 1. **RaboAssignment**
