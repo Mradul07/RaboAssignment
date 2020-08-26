@@ -1,0 +1,244 @@
+{
+	"info": {
+		"_postman_id": "98ac4201-7ba1-4c17-bfd3-c90975a06191",
+		"name": "Employee API Copy",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "User login",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/employee/login?name=Tester123&pwd=test123",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"employee",
+						"login"
+					],
+					"query": [
+						{
+							"key": "name",
+							"value": "Tester123"
+						},
+						{
+							"key": "pwd",
+							"value": "test123"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "User logout",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/employee/logout",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"employee",
+						"logout"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get All employees",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/employee/all",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"employee",
+						"all"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get specific employee",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/employee/Mahendra Singh Dhoni",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"employee",
+						"Mahendra Singh Dhoni"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add 1st employee",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"id\": 1,\r\n  \"employeeName\": \"Mahendra Singh Dhoni\",\r\n  \"firstName\": \"Mahendra Singh\",\r\n  \"lastName\": \"Dhoni\",\r\n  \"email\": \"ms.dhoni@gmail.com\",\r\n  \"password\": \"msdhoni123\",\r\n  \"phone\": \"012345678\",\r\n  \"employeeStatus\": 1\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/employee",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"employee"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add 2nd employee",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"id\": 2,\r\n  \"employeeName\": \"Suresh Raina\",\r\n  \"firstName\": \"Suresh\",\r\n  \"lastName\": \"Raina\",\r\n  \"email\": \"suresh.raina@gmail.com\",\r\n  \"password\": \"raina123\",\r\n  \"phone\": \"012345678\",\r\n  \"employeeStatus\": 1\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/employee",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"employee"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add an employeeList",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"type": "text",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "[\r\n    {\r\n        \"id\": 3,\r\n        \"employeeName\": \"Rahul Dravid\",\r\n        \"firstName\": \"Rahul\",\r\n        \"lastName\": \"Dravid\",\r\n        \"email\": \"rahul.d@gmail.com\",\r\n        \"password\": \"rahul123\",\r\n        \"phone\": \"999111\",\r\n        \"employeeStatus\": 1\r\n    },\r\n    {\r\n        \"id\": 4,\r\n        \"employeeName\": \"Virat Kohli\",\r\n        \"firstName\": \"Virat\",\r\n        \"lastName\": \"Kohli\",\r\n        \"email\": \"virat.kohli@gmail.com\",\r\n        \"password\": \"virat123\",\r\n        \"phone\": \"7789513\",\r\n        \"employeeStatus\": 1\r\n    },\r\n    {\r\n        \"id\": 5,\r\n        \"employeeName\": \"Rohit Sharma\",\r\n        \"firstName\": \"Rohit\",\r\n        \"lastName\": \"Sharma\",\r\n        \"email\": \"rohit.sharma@gmail.com\",\r\n        \"password\": \"rohit123\",\r\n        \"phone\": \"654642\",\r\n        \"employeeStatus\": 1\r\n    }\r\n]"
+				},
+				"url": {
+					"raw": "http://localhost:8080/employee/createWithList",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"employee",
+						"createWithList"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update an employee",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 3,\r\n    \"employeeName\": \"Rahul Dravid\",\r\n    \"firstName\": \"Rahul\",\r\n    \"lastName\": \"Dravid\",\r\n    \"email\": \"rahul.dravid@gmail.com\",\r\n    \"password\": \"rahul123\",\r\n    \"phone\": \"999111\",\r\n    \"employeeStatus\": 1\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/employee/Rahul Dravid",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"employee",
+						"Rahul Dravid"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete an employee",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://localhost:8080/employee/Rohit Sharma",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"employee",
+						"Rohit Sharma"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
