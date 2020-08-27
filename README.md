@@ -8,7 +8,7 @@
 - Verification
 - Contact
 
-## Projects in repository 
+## Items in repository 
   1. **RaboAssignment** - this project contains 2 items
      - Dummy application that displays "Hello, all API tests were successful" on localhost:8080/employeeApp
      - Test cases for EmployeesAPI those run on dynamic Wiremock server and static stubs
@@ -54,5 +54,5 @@
   
 
 ## Contact
-If you have any questions related to the project feel free to reach out to me on mradul.s15@gamil.com. I'll do my best to revert asap.
+If you have any questions related to the project feel free to reach out to me on mradul.s15@gmail.com. I'll do my best to revert asap.
 Good luck reviewing :)
