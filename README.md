@@ -1,12 +1,12 @@
 # RaboAssignment
 
 ## Table of Contents
-- Items in repository
-- Description of each project
-- Pre-requisites to run each project
-- Execution
-- Verification
-- Contact
+- [Items in repository](#items-in-repository)
+- [Description of each project](#description-of-each-project)
+- [Pre-requisites to run each project](#pre-requisites-to-run-each-project)
+- [Execution](#execution)
+- [Verification](#verification)
+- [Contact](#contact)
 
 ## Items in repository 
   1. **RaboAssignment** - this project contains 2 items
